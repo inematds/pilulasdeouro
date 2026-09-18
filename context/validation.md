@@ -12,3 +12,5 @@
 - Base de conteúdo: 41 testes aprovados; novo curso classificado nos filtros.
 
 Capturas e scripts temporários de navegador permanecem na pasta local de trabalho. O validador público de links pode ser repetido com `python3 scripts/verificar_curso.py`.
+
+Publicação: HTTP 200 no índice público, primeiro e último módulos, materiais, JavaScript e curso Markdown. Os três commits dos catálogos foram confirmados nos respectivos remotos. Nenhuma consulta ao Vercel foi feita.

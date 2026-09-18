@@ -7,5 +7,13 @@ Curso concluído no formato INEMA v2 escolhido pelo usuário: 4 trilhas, 12 mód
 - Desktop e celular de 360 px conferidos; temas claro, escuro e sépia revisados; conteúdo legível sem JavaScript e aprendizagem tolerante a armazenamento indisponível.
 - Validador de estrutura e links: `python3 scripts/verificar_curso.py`.
 - Revisão visual independente aprovada após corrigir contraste de rótulos e estado lido.
-- Publicação autorizada para `inematds/pilulasdeouro`, GitHub Pages e catálogos INEMA. Pushes em conclusão; registrar resultado ao finalizar.
+- Publicação autorizada para `inematds/pilulasdeouro`, GitHub Pages e catálogos INEMA. Publicado: GitHub Pages respondeu HTTP 200 no índice, módulos e materiais.
 - Portal usa autor NeiMaldaner; curso, busca e PRO usam inematds. Publicação exclusivamente via Git, sem consultar Vercel.
+
+## Catálogos enviados
+
+- Portal: `80fc3ed` (origin).
+- Busca: `b037c8d` (remoto `inemabuscas`; origin desse clone aponta para outro projeto).
+- PRO: `b72bd81` (origin).
+- Base gerada: 18.248 itens, incluindo 276 cursos e 234 projetos. O novo curso está classificado.
+- Os catálogos foram finalizados em worktrees isoladas. Uma edição simultânea de JEV entrou no mesmo commit do portal e foi preservada; não reverter alterações alheias.

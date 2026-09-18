@@ -7,5 +7,5 @@
 - [x] Testar 18 páginas, links, desktop, celular e funções de aprendizagem.
 - [x] Corrigir os achados e obter aprovação da revisão visual.
 - [x] Preparar cadastro no portal e catálogos derivados; testes e build aprovados.
-- [ ] Auditar e enviar o repositório público; verificar GitHub Pages.
-- [ ] Enviar os três catálogos e registrar os commits.
+- [x] Auditar e enviar o repositório público; verificar GitHub Pages.
+- [x] Enviar os três catálogos e registrar os commits.
