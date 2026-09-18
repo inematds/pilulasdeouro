@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="inema-course" content="pilulasdeouro">
+<meta name="inema-root" content="../../">
+<meta name="description" content="Organize páginas, identidade e evidências para que pessoas e sistemas encontrem informações claras.">
+<meta name="theme-color" content="#111827">
+<title>Um site fácil de compreender | Pílulas de Ouro · INEMA</title>
+<link rel="canonical" href="https://inematds.github.io/pilulasdeouro/curso/trilha4/modulo-4-1.html">
+<meta property="og:title" content="Um site fácil de compreender">
+<meta property="og:description" content="Organize páginas, identidade e evidências para que pessoas e sistemas encontrem informações claras.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<link rel="stylesheet" href="../../assets/site.css">
+<script type="application/json" data-inema-manifest>{"course": {"id": "pilulasdeouro", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Um pedido com começo e fim", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills com critério", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Uma segunda opinião que ajuda", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Conhecimento", "modules": [{"id": "2-1", "title": "Documentos que a IA consegue ler", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pesquisa com evidências", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagramas que explicam de verdade", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Produção", "modules": [{"id": "3-1", "title": "Interfaces que ajudam a agir", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Imagens com um briefing claro", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Modelos e configurações sem confusão", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Entrega", "modules": [{"id": "4-1", "title": "Um site fácil de compreender", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Projeto: central de pedidos", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Projeto: kit de entrega e conhecimento", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+</head>
+<body class="track-4">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav class="site-nav" aria-label="Navegação do curso">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a class="brand" href="../../index.html" aria-label="Pílulas de Ouro, início">
+<svg viewBox="0 0 32 32" aria-hidden="true">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"/>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"/>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span class="muted" aria-hidden="true">|</span>
+<a class="club text-sky-400" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html" >
+<span class="long">1. Fundamentos</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html" >
+<span class="long">2. Conhecimento</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html" >
+<span class="long">3. Produção</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html" aria-current="page">
+<span class="long">4. Entrega</span>
+</a>
+</div>
+<button class="theme-toggle js-only" id="theme-toggle" aria-label="Alternar tema claro e escuro">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+<circle cx="12" cy="12" r="4"/>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button type="button" data-inema-journey-open>Minha jornada</button>
+<button type="button" data-inema-appearance-toggle="#appearance" aria-controls="appearance" aria-expanded="false">Aparência</button>
+<button type="button" data-continue="../../curso/trilha1/modulo-1-1.html">Continuar estudo</button>
+<div class="appearance" id="appearance" data-inema-appearance data-open="false" role="region" aria-label="Preferências de leitura">
+<div class="pref-group">
+<p>Tema</p>
+<div class="pref-options">
+<button type="button" data-inema-set-theme="inema-dark" aria-pressed="false">Escuro</button>
+<button type="button" data-inema-set-theme="claro" aria-pressed="false">Claro</button>
+<button type="button" data-inema-set-theme="sepia" aria-pressed="false">Sépia</button>
+<button type="button" data-inema-set-theme="foco" aria-pressed="false">Foco</button>
+<button type="button" data-inema-set-theme="contraste" aria-pressed="false">Alto contraste</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Tamanho do texto</p>
+<div class="pref-options">
+<button type="button" data-inema-set-fontscale="100" aria-pressed="false">Padrão</button>
+<button type="button" data-inema-set-fontscale="112" aria-pressed="false">Maior</button>
+<button type="button" data-inema-set-fontscale="125" aria-pressed="false">Grande</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Largura da leitura</p>
+<div class="pref-options">
+<button type="button" data-inema-set-linewidth="60" aria-pressed="false">Estreita</button>
+<button type="button" data-inema-set-linewidth="68" aria-pressed="false">Média</button>
+<button type="button" data-inema-set-linewidth="75" aria-pressed="false">Ampla</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Entrelinha</p>
+<div class="pref-options">
+<button type="button" data-inema-set-leading="1.45" aria-pressed="false">Compacta</button>
+<button type="button" data-inema-set-leading="1.7" aria-pressed="false">Confortável</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Fonte</p>
+<div class="pref-options">
+<button type="button" data-inema-set-font="inter" aria-pressed="false">Inter</button>
+<button type="button" data-inema-set-font="system" aria-pressed="false">Sistema</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Acento</p>
+<div class="pref-options">
+<button type="button" data-inema-set-accent="emerald" aria-pressed="false">Verde</button>
+<button type="button" data-inema-set-accent="blue" aria-pressed="false">Azul</button>
+<button type="button" data-inema-set-accent="purple" aria-pressed="false">Roxo</button>
+<button type="button" data-inema-set-accent="amber" aria-pressed="false">Âmbar</button>
+</div>
+</div>
+</div>
+</div>
+<div class="meter" data-inema-meter="curso" aria-label="Progresso do curso">
+<div class="meter-line">
+<span data-inema-meter-frac>0 de 0</span>
+<span data-inema-meter-pct>0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill>
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">O conteúdo está disponível para leitura. Ative JavaScript para salvar progresso e anotações.</p>
+</noscript>
+<main id="conteudo" class="wrap">
+<div class="breadcrumb">
+<a href="../../index.html">Início</a> / <a href="index.html">Entrega</a> / Módulo 4.1</div>
+<header class="page-head">
+<p class="badge">MÓDULO 4.1</p>
+<h1>Um site fácil de compreender</h1>
+<p>Organize páginas, identidade e evidências para que pessoas e sistemas encontrem informações claras.</p>
+<div class="page-stats">
+<div>
+<strong>6 tópicos</strong>
+<span>Conceitos e aplicação</span>
+</div>
+<div>
+<strong>~35 minutos</strong>
+<span>Estimativa com prática</span>
+</div>
+<div>
+<strong>Prático</strong>
+<span>Passo a passo</span>
+</div>
+<div>
+<strong>Sua entrega</strong>
+<span>Uma auditoria de cinco páginas com três melhorias demonstráveis.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg class="w-full h-auto desktop-diagram" viewBox="0 0 800 180" role="img" aria-label="Página → Identidade → Evidência → Auditoria" font-family="Inter,sans-serif">
+<defs>
+<filter id="m4-1-False-glow">
+<feGaussianBlur stdDeviation="1.8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<pattern id="m4-1-False-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1" fill="#fbbf24" opacity=".13"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#m4-1-False-grid)"/>
+<g stroke="#fbbf24" stroke-width="1.8" opacity=".6">
+<path d="M188,84.0 h24"/>
+<path d="M388,84.0 h24"/>
+<path d="M588,84.0 h24"/>
+</g>
+<g>
+<rect x="12" y="46" width="176" height="76" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2"/>
+<text x="100.0" y="69" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 1</text>
+<text x="100.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Página</text>
+</g>
+<g>
+<rect x="212" y="46" width="176" height="76" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="300.0" y="69" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 2</text>
+<text x="300.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Identidade</text>
+</g>
+<g>
+<rect x="412" y="46" width="176" height="76" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="500.0" y="69" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 3</text>
+<text x="500.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Evidência</text>
+</g>
+<g>
+<rect x="612" y="46" width="176" height="76" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2" filter="url(#m4-1-False-glow)"/>
+<text x="700.0" y="69" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 4</text>
+<text x="700.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Auditoria</text>
+</g>
+</svg>
+<svg class="w-full h-auto mobile-diagram" viewBox="0 0 360 370" role="img" aria-label="Página → Identidade → Evidência → Auditoria" font-family="Inter,sans-serif">
+<defs>
+<filter id="m4-1-True-glow">
+<feGaussianBlur stdDeviation="1.8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<pattern id="m4-1-True-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1" fill="#fbbf24" opacity=".13"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#m4-1-True-grid)"/>
+<g stroke="#fbbf24" stroke-width="1.8" opacity=".6">
+<path d="M180.0,74 v28"/>
+<path d="M180.0,164 v28"/>
+<path d="M180.0,254 v28"/>
+</g>
+<g>
+<rect x="55" y="12" width="250" height="62" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2"/>
+<text x="180.0" y="35" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 1</text>
+<text x="180.0" y="59" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Página</text>
+</g>
+<g>
+<rect x="55" y="102" width="250" height="62" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="180.0" y="125" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 2</text>
+<text x="180.0" y="149" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Identidade</text>
+</g>
+<g>
+<rect x="55" y="192" width="250" height="62" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="180.0" y="215" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 3</text>
+<text x="180.0" y="239" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Evidência</text>
+</g>
+<g>
+<rect x="55" y="282" width="250" height="62" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2" filter="url(#m4-1-True-glow)"/>
+<text x="180.0" y="305" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 4</text>
+<text x="180.0" y="329" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Auditoria</text>
+</g>
+</svg>
+<figcaption>Uma auditoria de cinco páginas com três melhorias demonstráveis.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav class="lesson-toc" data-inema-toc aria-label="Índice do módulo">
+<strong>Neste módulo</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Comece pela informação acessível</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Dê um endereço ao que merece referência</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Mantenha a identidade consistente</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Use evidências que sustentem o texto</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Transforme a auditoria em tarefas</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Prática: audite cinco páginas</a>
+</li>
+</ul>
+<div class="meter" data-inema-meter="modulo:4-1" aria-label="Progresso deste módulo">
+<div class="meter-line">
+<span data-inema-meter-frac>0 de 0</span>
+<span data-inema-meter-pct>0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill>
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" id="modulo-4-1" data-inema-module="4-1" data-inema-track="4">
+<section class="topic-section" id="topico-1" data-inema-topic="modulo-4-1#topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Comece pela informação acessível</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-1-t1-p1">Uma página precisa apresentar seu assunto de forma clara. Título, introdução, seções e links ajudam pessoas e sistemas a entender o conteúdo. SEO trata de descoberta em mecanismos de busca; GEO é um termo usado para práticas voltadas à compreensão e presença em respostas de sistemas de IA.</p>
+<p data-inema-block="m4-1-t1-p2">Nenhuma dessas práticas garante recomendação ou posição. Neste módulo, o objetivo é corrigir problemas verificáveis do site: páginas sem identidade, conteúdo difícil de localizar e informações contraditórias. O resultado será uma auditoria, não uma promessa de tráfego.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m4-1-t1-p3">Trabalhar com mudanças observáveis evita medir sucesso apenas por um score de ferramenta. Você melhora a utilidade do site e registra o que efetivamente foi corrigido.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Fazer</h3>
+<p>Relacionar cada recomendação a uma página.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Prometer que uma nota garante recomendação por IA.</p>
+</div>
+</div>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Descoberta</strong>
+<span>Possibilidade de encontrar conteúdo</span>
+</div>
+<div>
+<strong>Compreensão</strong>
+<span>Clareza sobre o assunto</span>
+</div>
+<div>
+<strong>GEO</strong>
+<span>Práticas ligadas à presença em respostas de IA</span>
+</div>
+<div>
+<strong>Evidência</strong>
+<span>Prova da melhoria realizada</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-2" data-inema-topic="modulo-4-1#topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Dê um endereço ao que merece referência</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-1-t2-p1">Se vários serviços aparecem apenas em uma única página sem links específicos, fica difícil apontar para um item. Uma página individual ou uma âncora estável permite compartilhar o lugar exato da informação. Escolha a solução adequada ao tamanho do conteúdo.</p>
+<p data-inema-block="m4-1-t2-p2">O endereço deve levar ao conteúdo prometido. Evite páginas quase vazias criadas apenas para multiplicar URLs. Um serviço precisa de descrição, condições e próximo passo. Teste o link em uma nova janela e confirme que ele continua útil fora da navegação original.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m4-1-t2-p3">Um endereço específico facilita consulta, referência e manutenção. Ele também reduz a ambiguidade quando alguém compartilha apenas um serviço do catálogo.</p>
+</div>
+<h3>Um caminho para aplicar</h3>
+<ol class="timeline">
+<li>Liste páginas e informações essenciais.</li>
+<li>Escolha três problemas com correção pequena.</li>
+<li>Aplique, repita o teste e registre a diferença.</li>
+</ol>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>URL</strong>
+<span>Endereço de um recurso</span>
+</div>
+<div>
+<strong>Âncora</strong>
+<span>Ponto identificável na página</span>
+</div>
+<div>
+<strong>Especificidade</strong>
+<span>Destino ligado ao assunto</span>
+</div>
+<div>
+<strong>Utilidade</strong>
+<span>Conteúdo suficiente para a consulta</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-3" data-inema-topic="modulo-4-1#topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Mantenha a identidade consistente</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-1-t3-p1">Nome, descrição e contatos precisam representar a mesma organização. Uma página com três marcas diferentes sem explicação pode confundir leitores. Se houver marcas, unidades ou produtos distintos, explique a relação em vez de apenas repetir nomes.</p>
+<p data-inema-block="m4-1-t3-p2">Confira também títulos de página, rodapé e dados estruturados existentes. O que aparece em informações para máquinas deve corresponder ao conteúdo visível. Não acrescente avaliações, clientes ou credenciais que o site não pode demonstrar.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m4-1-t3-p3">A consistência ajuda a entender quem oferece o conteúdo e como entrar em contato. Ela previne contradições introduzidas por templates e páginas copiadas.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Exemplo de trabalho</span>
+<button type="button" class="copy js-only" data-copy="exemplo-4-1">Copiar</button>
+</div>
+<pre id="exemplo-4-1">
+<code>Página: /servicos/revisao-de-texto/
+Problema: o título diz apenas “Serviço”.
+Impacto: o assunto não é claro ao abrir a página isolada.
+Correção: nomear o serviço e explicar entrada, saída e prazo.
+Verificação: abrir a URL e localizar essas três informações.</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Dica prática</strong>Relacionar cada recomendação a uma página. Registre o resultado antes de mudar outra parte do processo.</aside>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Identidade</strong>
+<span>Quem publica e oferece o serviço</span>
+</div>
+<div>
+<strong>Consistência</strong>
+<span>Mesma informação entre páginas</span>
+</div>
+<div>
+<strong>Relação</strong>
+<span>Vínculo entre marcas ou unidades</span>
+</div>
+<div>
+<strong>Dado estruturado</strong>
+<span>Informação em formato legível por máquina</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-4" data-inema-topic="modulo-4-1#topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Use evidências que sustentem o texto</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-1-t4-p1">Afirmações técnicas, números e comparações precisam de apoio adequado ao tema. Uma referência deve demonstrar a frase, e não apenas tratar de um assunto parecido. Quando a informação for uma experiência própria, descreva método, contexto e limitações.</p>
+<p data-inema-block="m4-1-t4-p2">Separe exemplos fictícios de resultados reais. Em um site de demonstração, identifique os dados ilustrativos. Um catálogo pode explicar um serviço sem inventar depoimentos ou métricas. A qualidade da informação importa mais que a quantidade de selos visuais.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m4-1-t4-p3">O leitor precisa conseguir distinguir descrição, evidência e hipótese. Essa clareza ajuda a avaliar confiança e reduz a chance de uma frase promocional virar uma promessa indevida.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Fazer</h3>
+<p>Manter dados visíveis e estruturados coerentes.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Criar páginas vazias apenas para aumentar URLs.</p>
+</div>
+</div>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Apoio</strong>
+<span>Material que sustenta a afirmação</span>
+</div>
+<div>
+<strong>Método</strong>
+<span>Como um resultado foi observado</span>
+</div>
+<div>
+<strong>Limitação</strong>
+<span>Até onde a conclusão vale</span>
+</div>
+<div>
+<strong>Exemplo</strong>
+<span>Dado ilustrativo identificado</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-5" data-inema-topic="modulo-4-1#topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Transforme a auditoria em tarefas</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-1-t5-p1">Um relatório deve apontar página, problema, impacto e menor correção. Priorize o que impede encontrar ou entender informação essencial. Um score pode resumir critérios, mas não substitui a descrição do que precisa mudar.</p>
+<p data-inema-block="m4-1-t5-p2">Depois da alteração, repita a mesma verificação. Se o problema era um link que não levava ao serviço, o teste é abrir esse endereço e conferir o destino. Não use uma nota maior como única prova de que o problema foi resolvido.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m4-1-t5-p3">Tarefas pequenas tornam a auditoria executável. A repetição do mesmo teste conecta recomendação e resultado, sem depender de uma avaliação subjetiva posterior.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Critérios para conferir sua entrega</caption>
+<thead>
+<tr>
+<th scope="col">Critério</th>
+<th scope="col">Evidência esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Destino</th>
+<td>Links levam ao conteúdo prometido.</td>
+</tr>
+<tr>
+<th scope="row">Identidade</th>
+<td>Nome e contatos são consistentes.</td>
+</tr>
+<tr>
+<th scope="row">Evidência</th>
+<td>Correções têm teste e resultado registrados.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Antes de avançar</strong>Manter dados visíveis e estruturados coerentes. Se algum critério falhar, descreva o caso e ajuste essa parte.</aside>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Achado</strong>
+<span>Problema localizado</span>
+</div>
+<div>
+<strong>Impacto</strong>
+<span>Efeito para quem consulta</span>
+</div>
+<div>
+<strong>Correção</strong>
+<span>Mudança necessária</span>
+</div>
+<div>
+<strong>Reteste</strong>
+<span>Mesma conferência após alterar</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-6" data-inema-topic="modulo-4-1#topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Prática: audite cinco páginas</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-1-t6-p1">Escolha um site de exercício ou um projeto seu e selecione cinco páginas. Registre assunto, endereço, identidade e próximo passo de cada uma. Identifique até três problemas e proponha correções com evidência de conclusão.</p>
+<p data-inema-block="m4-1-t6-p2">Se ainda não tiver site, use cinco documentos HTML locais como simulação. O exercício pode ser concluído sem publicar nada. O importante é que outra pessoa consiga abrir os destinos e entender as informações sem depender de explicações externas.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m4-1-t6-p3">A prática prepara a entrega de uma auditoria útil. Ela também mostra que boa estrutura e informação consistente podem ser verificadas antes de qualquer publicação.</p>
+</div>
+<div class="practice">
+<h3>Seu exercício</h3>
+<p>Um catálogo mostra três serviços em uma única página, sem âncoras, e o rodapé usa outro nome de empresa sem explicação. Proponha duas correções e como testá-las.</p>
+<a class="button small" href="../../materiais/pratica-4-1.md" download>Baixar ficha da prática</a>
+</div>
+<details class="solution">
+<summary>Conferir resposta comentada</summary>
+<pre>Criar âncoras estáveis ou páginas úteis para cada serviço e verificar links diretos. Corrigir o nome do rodapé ou explicar a relação entre as marcas; comparar cabeçalho, rodapé e página de contato. Essas mudanças melhoram clareza, sem garantir ranking ou recomendação.</pre>
+</details>
+<div class="check" data-inema-check="modulo-4-1#q1">
+<h3>Cheque sua compreensão</h3>
+<p>Uma ferramenta elevou o score do site. Qual é a melhor prova de melhoria?</p>
+<div class="check-options">
+<button type="button" class="js-only" data-inema-check-option="0">Apenas o número maior.</button>
+<button type="button" class="js-only" data-inema-check-option="1">A quantidade de palavras acrescentadas.</button>
+<button type="button" class="js-only" data-inema-check-option="2">O problema concreto deixou de ocorrer no mesmo teste.</button>
+</div>
+<div data-inema-check-feedback role="status" aria-live="polite">
+</div>
+<noscript>
+<p>O problema concreto deixou de ocorrer no mesmo teste. Uma nota resume critérios. A evidência principal é o comportamento e a informação corrigidos.</p>
+</noscript>
+</div>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Amostra</strong>
+<span>Cinco páginas escolhidas</span>
+</div>
+<div>
+<strong>Inventário</strong>
+<span>Lista de assunto e endereço</span>
+</div>
+<div>
+<strong>Prioridade</strong>
+<span>Ordem das correções</span>
+</div>
+<div>
+<strong>Comprovação</strong>
+<span>Resultado do teste repetido</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>O que fica deste módulo</h2>
+<p>Uma auditoria de cinco páginas com três melhorias demonstráveis.</p>
+<ul>
+<li>✓ Links levam ao conteúdo prometido.</li>
+<li>✓ Nome e contatos são consistentes.</li>
+<li>✓ Correções têm teste e resultado registrados.</li>
+</ul>
+<p class="public-notice">O progresso registra sua leitura. A prática fica concluída quando você confere a entrega.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Voltar para a trilha</a>
+<a class="button primary" href="../trilha4/modulo-4-2.html">Próximo módulo: Projeto: central de pedidos</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.0.0</span>
+<span>
+<a href="../../materiais/index.html">Materiais do aluno</a> · <a href="../../index.html">Início do curso</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script type="application/json" data-quiz-definition>{"id": "modulo-4-1#q1", "q": "Uma ferramenta elevou o score do site. Qual é a melhor prova de melhoria?", "options": ["Apenas o número maior.", "A quantidade de palavras acrescentadas.", "O problema concreto deixou de ocorrer no mesmo teste."], "answer": "2", "explain": {"0": "Uma nota resume critérios. A evidência principal é o comportamento e a informação corrigidos.", "1": "Uma nota resume critérios. A evidência principal é o comportamento e a informação corrigidos.", "2": "Uma nota resume critérios. A evidência principal é o comportamento e a informação corrigidos."}}</script>
+</body>
+</html>

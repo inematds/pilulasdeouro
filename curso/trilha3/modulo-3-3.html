@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="inema-course" content="pilulasdeouro">
+<meta name="inema-root" content="../../">
+<meta name="description" content="Compare alternativas com a mesma tarefa e preserve o caminho de volta.">
+<meta name="theme-color" content="#111827">
+<title>Modelos e configurações sem confusão | Pílulas de Ouro · INEMA</title>
+<link rel="canonical" href="https://inematds.github.io/pilulasdeouro/curso/trilha3/modulo-3-3.html">
+<meta property="og:title" content="Modelos e configurações sem confusão">
+<meta property="og:description" content="Compare alternativas com a mesma tarefa e preserve o caminho de volta.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/fonts.css">
+<link rel="stylesheet" href="../../assets/learn.css">
+<link rel="stylesheet" href="../../assets/site.css">
+<script type="application/json" data-inema-manifest>{"course": {"id": "pilulasdeouro", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Um pedido com começo e fim", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills com critério", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Uma segunda opinião que ajuda", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Conhecimento", "modules": [{"id": "2-1", "title": "Documentos que a IA consegue ler", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pesquisa com evidências", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagramas que explicam de verdade", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Produção", "modules": [{"id": "3-1", "title": "Interfaces que ajudam a agir", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Imagens com um briefing claro", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Modelos e configurações sem confusão", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Entrega", "modules": [{"id": "4-1", "title": "Um site fácil de compreender", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Projeto: central de pedidos", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Projeto: kit de entrega e conhecimento", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+</head>
+<body class="track-3">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav class="site-nav" aria-label="Navegação do curso">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a class="brand" href="../../index.html" aria-label="Pílulas de Ouro, início">
+<svg viewBox="0 0 32 32" aria-hidden="true">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"/>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"/>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span class="muted" aria-hidden="true">|</span>
+<a class="club text-sky-400" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html" >
+<span class="long">1. Fundamentos</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html" >
+<span class="long">2. Conhecimento</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html" aria-current="page">
+<span class="long">3. Produção</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html" >
+<span class="long">4. Entrega</span>
+</a>
+</div>
+<button class="theme-toggle js-only" id="theme-toggle" aria-label="Alternar tema claro e escuro">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+<circle cx="12" cy="12" r="4"/>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button type="button" data-inema-journey-open>Minha jornada</button>
+<button type="button" data-inema-appearance-toggle="#appearance" aria-controls="appearance" aria-expanded="false">Aparência</button>
+<button type="button" data-continue="../../curso/trilha1/modulo-1-1.html">Continuar estudo</button>
+<div class="appearance" id="appearance" data-inema-appearance data-open="false" role="region" aria-label="Preferências de leitura">
+<div class="pref-group">
+<p>Tema</p>
+<div class="pref-options">
+<button type="button" data-inema-set-theme="inema-dark" aria-pressed="false">Escuro</button>
+<button type="button" data-inema-set-theme="claro" aria-pressed="false">Claro</button>
+<button type="button" data-inema-set-theme="sepia" aria-pressed="false">Sépia</button>
+<button type="button" data-inema-set-theme="foco" aria-pressed="false">Foco</button>
+<button type="button" data-inema-set-theme="contraste" aria-pressed="false">Alto contraste</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Tamanho do texto</p>
+<div class="pref-options">
+<button type="button" data-inema-set-fontscale="100" aria-pressed="false">Padrão</button>
+<button type="button" data-inema-set-fontscale="112" aria-pressed="false">Maior</button>
+<button type="button" data-inema-set-fontscale="125" aria-pressed="false">Grande</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Largura da leitura</p>
+<div class="pref-options">
+<button type="button" data-inema-set-linewidth="60" aria-pressed="false">Estreita</button>
+<button type="button" data-inema-set-linewidth="68" aria-pressed="false">Média</button>
+<button type="button" data-inema-set-linewidth="75" aria-pressed="false">Ampla</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Entrelinha</p>
+<div class="pref-options">
+<button type="button" data-inema-set-leading="1.45" aria-pressed="false">Compacta</button>
+<button type="button" data-inema-set-leading="1.7" aria-pressed="false">Confortável</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Fonte</p>
+<div class="pref-options">
+<button type="button" data-inema-set-font="inter" aria-pressed="false">Inter</button>
+<button type="button" data-inema-set-font="system" aria-pressed="false">Sistema</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Acento</p>
+<div class="pref-options">
+<button type="button" data-inema-set-accent="emerald" aria-pressed="false">Verde</button>
+<button type="button" data-inema-set-accent="blue" aria-pressed="false">Azul</button>
+<button type="button" data-inema-set-accent="purple" aria-pressed="false">Roxo</button>
+<button type="button" data-inema-set-accent="amber" aria-pressed="false">Âmbar</button>
+</div>
+</div>
+</div>
+</div>
+<div class="meter" data-inema-meter="curso" aria-label="Progresso do curso">
+<div class="meter-line">
+<span data-inema-meter-frac>0 de 0</span>
+<span data-inema-meter-pct>0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill>
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">O conteúdo está disponível para leitura. Ative JavaScript para salvar progresso e anotações.</p>
+</noscript>
+<main id="conteudo" class="wrap">
+<div class="breadcrumb">
+<a href="../../index.html">Início</a> / <a href="index.html">Produção</a> / Módulo 3.3</div>
+<header class="page-head">
+<p class="badge">MÓDULO 3.3</p>
+<h1>Modelos e configurações sem confusão</h1>
+<p>Compare alternativas com a mesma tarefa e preserve o caminho de volta.</p>
+<div class="page-stats">
+<div>
+<strong>6 tópicos</strong>
+<span>Conceitos e aplicação</span>
+</div>
+<div>
+<strong>~35 minutos</strong>
+<span>Estimativa com prática</span>
+</div>
+<div>
+<strong>Prático</strong>
+<span>Passo a passo</span>
+</div>
+<div>
+<strong>Sua entrega</strong>
+<span>Uma matriz de comparação e um perfil de exemplo sem credenciais.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg class="w-full h-auto desktop-diagram" viewBox="0 0 800 180" role="img" aria-label="Tarefa → Perfil → Teste → Comparação" font-family="Inter,sans-serif">
+<defs>
+<filter id="m3-3-False-glow">
+<feGaussianBlur stdDeviation="1.8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<pattern id="m3-3-False-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1" fill="#c084fc" opacity=".13"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#m3-3-False-grid)"/>
+<g stroke="#c084fc" stroke-width="1.8" opacity=".6">
+<path d="M188,84.0 h24"/>
+<path d="M388,84.0 h24"/>
+<path d="M588,84.0 h24"/>
+</g>
+<g>
+<rect x="12" y="46" width="176" height="76" rx="12" fill="#171d2a" stroke="#c084fc" stroke-width="2"/>
+<text x="100.0" y="69" text-anchor="middle" fill="#c084fc" font-size="12">ETAPA 1</text>
+<text x="100.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Tarefa</text>
+</g>
+<g>
+<rect x="212" y="46" width="176" height="76" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="300.0" y="69" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 2</text>
+<text x="300.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Perfil</text>
+</g>
+<g>
+<rect x="412" y="46" width="176" height="76" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="500.0" y="69" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 3</text>
+<text x="500.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Teste</text>
+</g>
+<g>
+<rect x="612" y="46" width="176" height="76" rx="12" fill="#171d2a" stroke="#c084fc" stroke-width="2" filter="url(#m3-3-False-glow)"/>
+<text x="700.0" y="69" text-anchor="middle" fill="#c084fc" font-size="12">ETAPA 4</text>
+<text x="700.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Comparação</text>
+</g>
+</svg>
+<svg class="w-full h-auto mobile-diagram" viewBox="0 0 360 370" role="img" aria-label="Tarefa → Perfil → Teste → Comparação" font-family="Inter,sans-serif">
+<defs>
+<filter id="m3-3-True-glow">
+<feGaussianBlur stdDeviation="1.8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<pattern id="m3-3-True-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1" fill="#c084fc" opacity=".13"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#m3-3-True-grid)"/>
+<g stroke="#c084fc" stroke-width="1.8" opacity=".6">
+<path d="M180.0,74 v28"/>
+<path d="M180.0,164 v28"/>
+<path d="M180.0,254 v28"/>
+</g>
+<g>
+<rect x="55" y="12" width="250" height="62" rx="12" fill="#171d2a" stroke="#c084fc" stroke-width="2"/>
+<text x="180.0" y="35" text-anchor="middle" fill="#c084fc" font-size="12">ETAPA 1</text>
+<text x="180.0" y="59" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Tarefa</text>
+</g>
+<g>
+<rect x="55" y="102" width="250" height="62" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="180.0" y="125" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 2</text>
+<text x="180.0" y="149" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Perfil</text>
+</g>
+<g>
+<rect x="55" y="192" width="250" height="62" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="180.0" y="215" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 3</text>
+<text x="180.0" y="239" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Teste</text>
+</g>
+<g>
+<rect x="55" y="282" width="250" height="62" rx="12" fill="#171d2a" stroke="#c084fc" stroke-width="2" filter="url(#m3-3-True-glow)"/>
+<text x="180.0" y="305" text-anchor="middle" fill="#c084fc" font-size="12">ETAPA 4</text>
+<text x="180.0" y="329" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Comparação</text>
+</g>
+</svg>
+<figcaption>Uma matriz de comparação e um perfil de exemplo sem credenciais.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav class="lesson-toc" data-inema-toc aria-label="Índice do módulo">
+<strong>Neste módulo</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Escolha pela tarefa</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Separe conta, modelo e interface</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Crie perfis sem segredos</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Faça um teste de conectividade e função</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Compare com a mesma régua</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Prática: prepare uma comparação</a>
+</li>
+</ul>
+<div class="meter" data-inema-meter="modulo:3-3" aria-label="Progresso deste módulo">
+<div class="meter-line">
+<span data-inema-meter-frac>0 de 0</span>
+<span data-inema-meter-pct>0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill>
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" id="modulo-3-3" data-inema-module="3-3" data-inema-track="3">
+<section class="topic-section" id="topico-1" data-inema-topic="modulo-3-3#topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Escolha pela tarefa</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-3-t1-p1">Um modelo precisa ser avaliado pelo trabalho que deve realizar. Extração de dados, análise de imagem e revisão de código exigem capacidades diferentes. Um modelo que recebe apenas texto não passa a enxergar imagens porque o pedido é bem escrito.</p>
+<p data-inema-block="m3-3-t1-p2">Defina uma tarefa pequena e os critérios de qualidade antes de comparar alternativas. Considere erros, tempo, custo e necessidade de revisão. A alternativa mais barata por unidade pode exigir tantas correções que o processo completo fique mais caro.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-3-t1-p3">A comparação deixa de depender de rankings genéricos. Você passa a avaliar o custo e a qualidade da entrega que realmente precisa produzir.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Fazer</h3>
+<p>Carregar credenciais fora dos arquivos versionados.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Copiar uma chave para um exemplo público.</p>
+</div>
+</div>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Capacidade</strong>
+<span>Tipos de entrada e saída aceitos</span>
+</div>
+<div>
+<strong>Qualidade</strong>
+<span>Adequação aos critérios</span>
+</div>
+<div>
+<strong>Latência</strong>
+<span>Tempo até a resposta</span>
+</div>
+<div>
+<strong>Custo total</strong>
+<span>Uso somado ao trabalho de correção</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-2" data-inema-topic="modulo-3-3#topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Separe conta, modelo e interface</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-3-t2-p1">A interface é o programa com que você interage. O provedor oferece o serviço, e o modelo executa a tarefa. Uma assinatura de produto e o uso de uma API podem ter cobranças e limites diferentes. Verifique isso na conta utilizada.</p>
+<p data-inema-block="m3-3-t2-p2">Integrações com provedores alternativos, como DeepSeek ou MIMO, dependem da compatibilidade suportada pela ferramenta. Não presuma que trocar apenas um nome seja suficiente. Endpoint, autenticação, recursos de ferramentas e limites precisam ser compatíveis.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-3-t2-p3">Entender as camadas ajuda a localizar falhas e evita atribuir a um modelo um problema de autenticação, rede ou configuração da interface.</p>
+</div>
+<h3>Um caminho para aplicar</h3>
+<ol class="timeline">
+<li>Registre configuração atual e critérios da tarefa.</li>
+<li>Teste acesso e capacidades em uma entrada pequena.</li>
+<li>Compare resultados e mantenha uma reversão documentada.</li>
+</ol>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Interface</strong>
+<span>Programa usado pela pessoa</span>
+</div>
+<div>
+<strong>Provedor</strong>
+<span>Serviço que recebe a solicitação</span>
+</div>
+<div>
+<strong>Modelo</strong>
+<span>Sistema que produz a resposta</span>
+</div>
+<div>
+<strong>Autenticação</strong>
+<span>Como o acesso é identificado</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-3" data-inema-topic="modulo-3-3#topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Crie perfis sem segredos</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-3-t3-p1">Um perfil descreve configurações, mas não deve servir como depósito de credenciais. Use nomes de variáveis de ambiente para indicar onde a chave será carregada. Um arquivo de exemplo precisa funcionar como documentação, sem conter valores reais.</p>
+<p data-inema-block="m3-3-t3-p2">Antes de alterar uma configuração existente, salve uma cópia e confirme qual arquivo a versão instalada utiliza. Algumas ferramentas permitem perfis ou opções por execução; outras exigem arquivos específicos. Consulte a ajuda atual em vez de renomear arquivos por tentativa.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-3-t3-p3">Separar configuração e credencial facilita compartilhar exemplos sem expor acesso. Preservar a configuração original torna o teste reversível.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Exemplo de trabalho</span>
+<button type="button" class="copy js-only" data-copy="exemplo-3-3">Copiar</button>
+</div>
+<pre id="exemplo-3-3">
+<code>{
+  &quot;nome&quot;: &quot;perfil-de-exemplo&quot;,
+  &quot;provedor&quot;: &quot;preencher-conforme-documentacao&quot;,
+  &quot;modelo&quot;: &quot;identificador-validado&quot;,
+  &quot;chave_env&quot;: &quot;PROVEDOR_API_KEY&quot;,
+  &quot;tarefa_teste&quot;: &quot;extrair-pedidos&quot;
+}
+
+Este é um esquema didático, não um arquivo de configuração de uma CLI específica.</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Dica prática</strong>Carregar credenciais fora dos arquivos versionados. Registre o resultado antes de mudar outra parte do processo.</aside>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Perfil</strong>
+<span>Conjunto de opções de execução</span>
+</div>
+<div>
+<strong>Variável</strong>
+<span>Nome usado para carregar um valor</span>
+</div>
+<div>
+<strong>Credencial</strong>
+<span>Segredo que autoriza acesso</span>
+</div>
+<div>
+<strong>Backup</strong>
+<span>Cópia recuperável da configuração</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-4" data-inema-topic="modulo-3-3#topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Faça um teste de conectividade e função</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-3-t4-p1">Comece com uma solicitação pequena, sem documentos importantes. Confirme se a autenticação funciona e se a resposta usa o modelo esperado. Depois teste a capacidade necessária: formato estruturado, ferramentas ou imagem, conforme a tarefa.</p>
+<p data-inema-block="m3-3-t4-p2">Uma resposta “olá” confirma parte do caminho, mas não demonstra que uma integração suporta todas as funções de um agente. Se a ferramenta precisa chamar operações, teste uma operação simples e reversível antes de iniciar um fluxo maior.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-3-t4-p3">A verificação em etapas separa problemas de conexão de limitações funcionais. Você evita descobrir incompatibilidades depois de já ter iniciado uma tarefa longa.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Fazer</h3>
+<p>Comparar os mesmos pedidos e critérios.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Escolher só pelo menor preço anunciado.</p>
+</div>
+</div>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Conectividade</strong>
+<span>Solicitação chega e recebe resposta</span>
+</div>
+<div>
+<strong>Identidade</strong>
+<span>Modelo e provedor esperados</span>
+</div>
+<div>
+<strong>Função</strong>
+<span>Capacidade exigida pelo fluxo</span>
+</div>
+<div>
+<strong>Teste mínimo</strong>
+<span>Operação pequena e verificável</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-5" data-inema-topic="modulo-3-3#topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Compare com a mesma régua</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-3-t5-p1">Use o mesmo conjunto de entradas e registre resultados por critério. Para extração de pedidos, conte campos corretos, lacunas preservadas e erros de formato. Meça tempo e consumo quando a ferramenta fornecer esses dados, sem estimar números que não foram observados.</p>
+<p data-inema-block="m3-3-t5-p2">Faça mais de uma execução quando a variabilidade for relevante. Uma única resposta excelente não demonstra estabilidade. A decisão pode ser usar um modelo para rascunho e outro para uma etapa específica, desde que a complexidade adicional se justifique.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-3-t5-p3">Uma matriz comparável mostra vantagens e limitações sem transformar preferência em evidência. Ela também permite repetir a avaliação quando o serviço mudar.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Critérios para conferir sua entrega</caption>
+<thead>
+<tr>
+<th scope="col">Critério</th>
+<th scope="col">Evidência esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Fidelidade</th>
+<td>Não inventa dados ausentes.</td>
+</tr>
+<tr>
+<th scope="row">Compatibilidade</th>
+<td>Executa as funções exigidas.</td>
+</tr>
+<tr>
+<th scope="row">Reversão</th>
+<td>O perfil anterior pode ser recuperado.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Antes de avançar</strong>Comparar os mesmos pedidos e critérios. Se algum critério falhar, descreva o caso e ajuste essa parte.</aside>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Régua</strong>
+<span>Critérios iguais para todos</span>
+</div>
+<div>
+<strong>Amostra</strong>
+<span>Entradas representativas</span>
+</div>
+<div>
+<strong>Variabilidade</strong>
+<span>Diferença entre execuções</span>
+</div>
+<div>
+<strong>Decisão</strong>
+<span>Escolha ligada ao resultado</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="topic-section" id="topico-6" data-inema-topic="modulo-3-3#topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Prática: prepare uma comparação</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-3-t6-p1">Defina uma tarefa de extração de três pedidos e compare dois perfis fictícios. No exercício, você não precisa contratar serviços: use a matriz para registrar resultados simulados claramente identificados.</p>
+<p data-inema-block="m3-3-t6-p2">Explique por que a opção mais rápida pode não ser a melhor se inventar prazos. Depois escreva o procedimento de retorno ao perfil original. O objetivo é aprender a comparar e reverter, não recomendar um provedor por fama ou preço de um exemplo.</p>
+</div>
+<div class="why">
+<h3>Por que aprender</h3>
+<p data-inema-block="m3-3-t6-p3">O exercício produz um protocolo de avaliação que pode ser aplicado com serviços reais depois. Ele impede que uma mudança de configuração seja confundida com uma melhoria demonstrada.</p>
+</div>
+<div class="practice">
+<h3>Seu exercício</h3>
+<p>Dados simulados: perfil A responde em 4 segundos e inventa um prazo; perfil B responde em 8 segundos e preserva todos os dados. Qual escolher para uma tabela que será usada como compromisso com clientes?</p>
+<a class="button small" href="../../materiais/pratica-3-3.md" download>Baixar ficha da prática</a>
+</div>
+<details class="solution">
+<summary>Conferir resposta comentada</summary>
+<pre>Escolher B neste teste, porque fidelidade é um critério obrigatório e A falhou nele. O tempo menor de A não compensa o compromisso inventado. Registrar que os tempos são simulados e que a conclusão vale para esse conjunto de entradas, não para todas as tarefas.</pre>
+</details>
+<div class="check" data-inema-check="modulo-3-3#q1">
+<h3>Cheque sua compreensão</h3>
+<p>Uma resposta curta funcionou. Isso prova compatibilidade completa com um agente?</p>
+<div class="check-options">
+<button type="button" class="js-only" data-inema-check-option="0">Sim, qualquer resposta confirma todas as funções.</button>
+<button type="button" class="js-only" data-inema-check-option="1">Não; é preciso testar as capacidades exigidas pelo fluxo.</button>
+<button type="button" class="js-only" data-inema-check-option="2">Sim, se o modelo tiver um nome conhecido.</button>
+</div>
+<div data-inema-check-feedback role="status" aria-live="polite">
+</div>
+<noscript>
+<p>Não; é preciso testar as capacidades exigidas pelo fluxo. Conectividade e compatibilidade funcional são verificações diferentes.</p>
+</noscript>
+</div>
+<h3>Conceitos-chave</h3>
+<div class="concepts">
+<div>
+<strong>Protocolo</strong>
+<span>Passos iguais de avaliação</span>
+</div>
+<div>
+<strong>Simulação</strong>
+<span>Dados didáticos identificados</span>
+</div>
+<div>
+<strong>Reversão</strong>
+<span>Retorno ao perfil anterior</span>
+</div>
+<div>
+<strong>Escolha</strong>
+<span>Resultado dos critérios prioritários</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button type="button" data-inema-read-toggle aria-pressed="false">
+<span class="inema-read-icon" aria-hidden="true">○</span>
+<span class="inema-read-label">Marcar como lido</span>
+</button>
+<button type="button" data-inema-doubt-toggle aria-pressed="false">Tenho dúvida</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>O que fica deste módulo</h2>
+<p>Uma matriz de comparação e um perfil de exemplo sem credenciais.</p>
+<ul>
+<li>✓ Não inventa dados ausentes.</li>
+<li>✓ Executa as funções exigidas.</li>
+<li>✓ O perfil anterior pode ser recuperado.</li>
+</ul>
+<p class="public-notice">O progresso registra sua leitura. A prática fica concluída quando você confere a entrega.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Voltar para a trilha</a>
+<a class="button primary" href="../trilha4/modulo-4-1.html">Próximo módulo: Um site fácil de compreender</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.0.0</span>
+<span>
+<a href="../../materiais/index.html">Materiais do aluno</a> · <a href="../../index.html">Início do curso</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script type="application/json" data-quiz-definition>{"id": "modulo-3-3#q1", "q": "Uma resposta curta funcionou. Isso prova compatibilidade completa com um agente?", "options": ["Sim, qualquer resposta confirma todas as funções.", "Não; é preciso testar as capacidades exigidas pelo fluxo.", "Sim, se o modelo tiver um nome conhecido."], "answer": "1", "explain": {"0": "Conectividade e compatibilidade funcional são verificações diferentes.", "1": "Conectividade e compatibilidade funcional são verificações diferentes.", "2": "Conectividade e compatibilidade funcional são verificações diferentes."}}</script>
+</body>
+</html>

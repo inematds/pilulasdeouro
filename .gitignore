@@ -1,0 +1,26 @@
+# Materiais de origem, transcrições e processamento: somente locais.
+/down/
+/.local/
+/transcricoes/
+/fontes/
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.srt
+*.vtt
+*.zip
+*.log
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+node_modules/
+playwright-report/
+test-results/
+# Ferramentas locais de coleta e registros que identificam a origem.
+/scripts/*
+!/scripts/gerar_curso.py
+!/scripts/verificar_curso.py
+/FALHAS.md

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="inema-course" content="pilulasdeouro">
+<meta name="inema-root" content="./">
+<meta name="description" content="Curso prático de IA com quatro trilhas, doze módulos, exercícios e projetos verificáveis.">
+<meta name="theme-color" content="#111827">
+<title>Pílulas de Ouro — IA em projetos práticos | Pílulas de Ouro · INEMA</title>
+<link rel="canonical" href="https://inematds.github.io/pilulasdeouro/">
+<meta property="og:title" content="Pílulas de Ouro — IA em projetos práticos">
+<meta property="og:description" content="Curso prático de IA com quatro trilhas, doze módulos, exercícios e projetos verificáveis.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/learn.css">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/json" data-inema-manifest>{"course": {"id": "pilulasdeouro", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Um pedido com começo e fim", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills com critério", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Uma segunda opinião que ajuda", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Conhecimento", "modules": [{"id": "2-1", "title": "Documentos que a IA consegue ler", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Pesquisa com evidências", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagramas que explicam de verdade", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Produção", "modules": [{"id": "3-1", "title": "Interfaces que ajudam a agir", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Imagens com um briefing claro", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Modelos e configurações sem confusão", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Entrega", "modules": [{"id": "4-1", "title": "Um site fácil de compreender", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Projeto: central de pedidos", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Projeto: kit de entrega e conhecimento", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+</head>
+<body class="track-4">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<nav class="site-nav" aria-label="Navegação do curso">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a class="brand" href="index.html" aria-label="Pílulas de Ouro, início">
+<svg viewBox="0 0 32 32" aria-hidden="true">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"/>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"/>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span class="muted" aria-hidden="true">|</span>
+<a class="club text-sky-400" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="curso/trilha1/index.html" >
+<span class="long">1. Fundamentos</span>
+</a>
+<a class="track-2" href="curso/trilha2/index.html" >
+<span class="long">2. Conhecimento</span>
+</a>
+<a class="track-3" href="curso/trilha3/index.html" >
+<span class="long">3. Produção</span>
+</a>
+<a class="track-4" href="curso/trilha4/index.html" >
+<span class="long">4. Entrega</span>
+</a>
+</div>
+<button class="theme-toggle js-only" id="theme-toggle" aria-label="Alternar tema claro e escuro">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+<circle cx="12" cy="12" r="4"/>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"/>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button type="button" data-inema-journey-open>Minha jornada</button>
+<button type="button" data-inema-appearance-toggle="#appearance" aria-controls="appearance" aria-expanded="false">Aparência</button>
+<button type="button" data-continue="curso/trilha1/modulo-1-1.html">Continuar estudo</button>
+<div class="appearance" id="appearance" data-inema-appearance data-open="false" role="region" aria-label="Preferências de leitura">
+<div class="pref-group">
+<p>Tema</p>
+<div class="pref-options">
+<button type="button" data-inema-set-theme="inema-dark" aria-pressed="false">Escuro</button>
+<button type="button" data-inema-set-theme="claro" aria-pressed="false">Claro</button>
+<button type="button" data-inema-set-theme="sepia" aria-pressed="false">Sépia</button>
+<button type="button" data-inema-set-theme="foco" aria-pressed="false">Foco</button>
+<button type="button" data-inema-set-theme="contraste" aria-pressed="false">Alto contraste</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Tamanho do texto</p>
+<div class="pref-options">
+<button type="button" data-inema-set-fontscale="100" aria-pressed="false">Padrão</button>
+<button type="button" data-inema-set-fontscale="112" aria-pressed="false">Maior</button>
+<button type="button" data-inema-set-fontscale="125" aria-pressed="false">Grande</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Largura da leitura</p>
+<div class="pref-options">
+<button type="button" data-inema-set-linewidth="60" aria-pressed="false">Estreita</button>
+<button type="button" data-inema-set-linewidth="68" aria-pressed="false">Média</button>
+<button type="button" data-inema-set-linewidth="75" aria-pressed="false">Ampla</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Entrelinha</p>
+<div class="pref-options">
+<button type="button" data-inema-set-leading="1.45" aria-pressed="false">Compacta</button>
+<button type="button" data-inema-set-leading="1.7" aria-pressed="false">Confortável</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Fonte</p>
+<div class="pref-options">
+<button type="button" data-inema-set-font="inter" aria-pressed="false">Inter</button>
+<button type="button" data-inema-set-font="system" aria-pressed="false">Sistema</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Acento</p>
+<div class="pref-options">
+<button type="button" data-inema-set-accent="emerald" aria-pressed="false">Verde</button>
+<button type="button" data-inema-set-accent="blue" aria-pressed="false">Azul</button>
+<button type="button" data-inema-set-accent="purple" aria-pressed="false">Roxo</button>
+<button type="button" data-inema-set-accent="amber" aria-pressed="false">Âmbar</button>
+</div>
+</div>
+</div>
+</div>
+<div class="meter" data-inema-meter="curso" aria-label="Progresso do curso">
+<div class="meter-line">
+<span data-inema-meter-frac>0 de 0</span>
+<span data-inema-meter-pct>0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill>
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">O conteúdo está disponível para leitura. Ative JavaScript para salvar progresso e anotações.</p>
+</noscript>
+<main id="conteudo" class="wrap">
+<section class="hero">
+<div>
+<h1>Pílulas<br>de <span class="gold">Ouro.</span>
+</h1>
+<p class="subtitle">IA em projetos práticos.</p>
+<p class="intro">Aprenda a transformar um pedido em uma entrega que funciona. Uma técnica por vez, com exemplos, prática e um jeito claro de conferir o resultado.</p>
+<div class="actions">
+<a class="button primary" href="curso/trilha1/modulo-1-1.html">Começar pela primeira prática</a>
+<a class="button" href="#trilhas">Explorar as trilhas</a>
+</div>
+</div>
+<div class="hero-lab">
+<p class="lab-heading">Da ideia à entrega <span>UM PASSO DE CADA VEZ</span>
+</p>
+<figure class="diagram">
+<svg class="w-full h-auto desktop-diagram" viewBox="0 0 800 180" role="img" aria-label="Delimitar → Produzir → Conferir → Entregar" font-family="Inter,sans-serif">
+<defs>
+<filter id="hero-False-glow">
+<feGaussianBlur stdDeviation="1.8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<pattern id="hero-False-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1" fill="#fbbf24" opacity=".13"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#hero-False-grid)"/>
+<g stroke="#fbbf24" stroke-width="1.8" opacity=".6">
+<path d="M188,84.0 h24"/>
+<path d="M388,84.0 h24"/>
+<path d="M588,84.0 h24"/>
+</g>
+<g>
+<rect x="12" y="46" width="176" height="76" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2"/>
+<text x="100.0" y="69" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 1</text>
+<text x="100.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Delimitar</text>
+</g>
+<g>
+<rect x="212" y="46" width="176" height="76" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="300.0" y="69" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 2</text>
+<text x="300.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Produzir</text>
+</g>
+<g>
+<rect x="412" y="46" width="176" height="76" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="500.0" y="69" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 3</text>
+<text x="500.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Conferir</text>
+</g>
+<g>
+<rect x="612" y="46" width="176" height="76" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2" filter="url(#hero-False-glow)"/>
+<text x="700.0" y="69" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 4</text>
+<text x="700.0" y="93" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Entregar</text>
+</g>
+</svg>
+<svg class="w-full h-auto mobile-diagram" viewBox="0 0 360 370" role="img" aria-label="Delimitar → Produzir → Conferir → Entregar" font-family="Inter,sans-serif">
+<defs>
+<filter id="hero-True-glow">
+<feGaussianBlur stdDeviation="1.8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<pattern id="hero-True-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="2" cy="2" r="1" fill="#fbbf24" opacity=".13"/>
+</pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#hero-True-grid)"/>
+<g stroke="#fbbf24" stroke-width="1.8" opacity=".6">
+<path d="M180.0,74 v28"/>
+<path d="M180.0,164 v28"/>
+<path d="M180.0,254 v28"/>
+</g>
+<g>
+<rect x="55" y="12" width="250" height="62" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2"/>
+<text x="180.0" y="35" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 1</text>
+<text x="180.0" y="59" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Delimitar</text>
+</g>
+<g>
+<rect x="55" y="102" width="250" height="62" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="180.0" y="125" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 2</text>
+<text x="180.0" y="149" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Produzir</text>
+</g>
+<g>
+<rect x="55" y="192" width="250" height="62" rx="12" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/>
+<text x="180.0" y="215" text-anchor="middle" fill="#38bdf8" font-size="12">ETAPA 3</text>
+<text x="180.0" y="239" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Conferir</text>
+</g>
+<g>
+<rect x="55" y="282" width="250" height="62" rx="12" fill="#171d2a" stroke="#fbbf24" stroke-width="2" filter="url(#hero-True-glow)"/>
+<text x="180.0" y="305" text-anchor="middle" fill="#fbbf24" font-size="12">ETAPA 4</text>
+<text x="180.0" y="329" text-anchor="middle" fill="#e5e7eb" font-size="17" font-weight="600">Entregar</text>
+</g>
+</svg>
+<figcaption>O método acompanha você do primeiro pedido ao projeto final.</figcaption>
+</figure>
+<p class="lab-output">
+<strong>Seu ponto de chegada:</strong> uma central de pedidos e um kit de entrega que outra pessoa consegue usar.</p>
+</div>
+</section>
+<div class="course-facts">
+<span>
+<strong>4</strong> trilhas</span>
+<span>
+<strong>12</strong> módulos</span>
+<span>
+<strong>72</strong> tópicos</span>
+<span>
+<strong>12</strong> práticas</span>
+<span>
+<strong>~7h</strong> com exercícios</span>
+</div>
+<section class="section-space" id="trilhas">
+<div class="section-heading">
+<h2>Escolha seu próximo passo</h2>
+<p>Comece pelos fundamentos ou retome o assunto de que seu projeto precisa.</p>
+</div>
+<div class="track-list">
+<a class="track-row track-1" href="curso/trilha1/index.html">
+<span class="track-number">01</span>
+<div>
+<h3>Fundamentos</h3>
+<p class="tagline">Comece pequeno. Termine de verdade.</p>
+</div>
+<p class="track-desc">Delimite o trabalho, escolha extensões com critério e aprenda a revisar o que a IA produz.</p>
+<span class="start-label">Abrir trilha</span>
+</a>
+<a class="track-row track-2" href="curso/trilha2/index.html">
+<span class="track-number">02</span>
+<div>
+<h3>Conhecimento</h3>
+<p class="tagline">Informação que você consegue conferir.</p>
+</div>
+<p class="track-desc">Transforme documentos em conhecimento organizado, com evidências e mapas legíveis.</p>
+<span class="start-label">Abrir trilha</span>
+</a>
+<a class="track-row track-3" href="curso/trilha3/index.html">
+<span class="track-number">03</span>
+<div>
+<h3>Produção</h3>
+<p class="tagline">Dê forma às suas decisões.</p>
+</div>
+<p class="track-desc">Crie interfaces e imagens úteis e compare modelos sem perder controle da configuração.</p>
+<span class="start-label">Abrir trilha</span>
+</a>
+<a class="track-row track-4" href="curso/trilha4/index.html">
+<span class="track-number">04</span>
+<div>
+<h3>Entrega</h3>
+<p class="tagline">O projeto precisa funcionar fora da conversa.</p>
+</div>
+<p class="track-desc">Audite a informação, construa uma central de pedidos e prepare uma entrega que pode ser continuada.</p>
+<span class="start-label">Abrir trilha</span>
+</a>
+</div>
+</section>
+<section class="two-col">
+<div class="panel">
+<h2>Estude com o seu projeto em mente</h2>
+<p>Você precisa apenas de um navegador e familiaridade básica com arquivos. As práticas de código podem ser feitas com um assistente de programação.</p>
+<p>Os exemplos usam dados fictícios. Ferramentas externas são opcionais nas atividades conceituais e podem exigir conta ou configuração própria.</p>
+</div>
+<div class="panel">
+<h2>Seu espaço de aprendizagem</h2>
+<ul>
+<li>Marque os tópicos lidos e aqueles que geraram dúvida.</li>
+<li>Selecione um trecho para grifar ou anotar.</li>
+<li>Retome pelo botão “Continuar estudo”.</li>
+<li>Exporte sua jornada para guardar uma cópia ou mudar de navegador.</li>
+</ul>
+<p class="public-notice">Progresso e notas ficam neste navegador. Exporte pela Minha jornada para ter uma cópia.</p>
+</div>
+</section>
+<section class="section-space">
+<h2>Termine com algo que pode mostrar</h2>
+<div class="two-col">
+<article class="panel">
+<h3>Central de pedidos</h3>
+<p>Importe dados, preserve pendências, trate duplicatas e exporte uma tabela conferida.</p>
+<a href="curso/trilha4/modulo-4-2.html">Conhecer o primeiro projeto</a>
+</article>
+<article class="panel">
+<h3>Kit de entrega e conhecimento</h3>
+<p>Reúna instruções, mapa do fluxo, exemplos e evidências para continuar o trabalho com clareza.</p>
+<a href="curso/trilha4/modulo-4-3.html">Conhecer o projeto de conclusão</a>
+</article>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.0.0</span>
+<span>
+<a href="materiais/index.html">Materiais do aluno</a> · <a href="index.html">Início do curso</a>
+</span>
+</div>
+</footer>
+<script src="assets/learn.js">
+</script>
+<script src="assets/site.js">
+</script>
+</body>
+</html>
