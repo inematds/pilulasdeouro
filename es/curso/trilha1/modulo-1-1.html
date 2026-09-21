@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-es" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Transforma una intención amplia en una entrega que puedas comprobar." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Un pedido con principio y fin | Pílulas de Ouro · INEMA</title>
+
+<meta content="Una solicitud con principio y fin" property="og:title"/>
+<meta content="Transforma una intención amplia en una entrega que puedas comprobar." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-es", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Una solicitud con principio y fin", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills con criterio", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Una segunda opinión que ayuda", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Conocimiento", "modules": [{"id": "2-1", "title": "Documentos que la IA puede leer", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Investigación con evidencias", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagramas que explican de verdad", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Producción", "modules": [{"id": "3-1", "title": "Interfaces que ayudan a actuar", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Imágenes con un briefing claro", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Plantillas y configuraciones sin confusión", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Entrega", "modules": [{"id": "4-1", "title": "Un sitio fácil de entender", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Proyecto: central de pedidos", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Proyecto: kit de entrega y conocimiento", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha1/modulo-1-1.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha1/modulo-1-1.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-1">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación del curso" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, inicio" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a aria-current="page" class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentos</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Conocimiento</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Producción</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Entrega</span>
+</a>
+</div>
+<button aria-label="Alternar tema claro y oscuro" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">Mi recorrido</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Apariencia</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continuar estudio</button>
+<div aria-label="Preferencias de lectura" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Tema</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Claro</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Enfoque</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Tamaño del texto</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Patrón</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Mayor</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Grande</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Ancho de lectura</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Estrecha</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Media</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Amplia</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Interlineado</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compacta</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Cómoda</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Fuente</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">Sistema</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Acento</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Verde</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Azul</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Morado</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Ámbar</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Progreso del curso" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">El contenido está disponible para lectura. Activa JavaScript para guardar progreso y anotaciones.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Fundamentos</a> / Módulo 1.1</div>
+<header class="page-head">
+<p class="badge">MÓDULO 1.1</p>
+<h1>Una solicitud con principio y fin</h1>
+<p>Transforma una intención amplia en una entrega que puedas comprobar.</p>
+<div class="page-stats">
+<div>
+<strong>6 temas</strong>
+<span>Conceptos y aplicación</span>
+</div>
+<div>
+<strong>~35 minutos</strong>
+<span>Estimación con práctica</span>
+</div>
+<div>
+<strong>Práctico</strong>
+<span>Paso a paso</span>
+</div>
+<div>
+<strong>Tu entrega</strong>
+<span>Una ficha de alcance y una tabla fiel a los pedidos recibidos.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Pedido → Recorte → Entrega → Revisión" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m1-1-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m1-1-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#34d399" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m1-1-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#34d399" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#34d399" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="100.0" y="69">ETAPA 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Pedido</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">ETAPA 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Recorte</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">ETAPA 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Entrega</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m1-1-False-glow)" height="76" rx="12" stroke="#34d399" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="700.0" y="69">ETAPA 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Conferencia</text>
+</g>
+</svg>
+<svg aria-label="Pedido → Recorte → Entrega → Revisión" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m1-1-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m1-1-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#34d399" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m1-1-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#34d399" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#34d399" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="180.0" y="35">ETAPA 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Pedido</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">ETAPA 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Recorte</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">ETAPA 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Entrega</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m1-1-True-glow)" height="62" rx="12" stroke="#34d399" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="180.0" y="305">ETAPA 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Conferencia</text>
+</g>
+</svg>
+<figcaption>Una ficha de alcance y una tabla fiel a los pedidos recibidos.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Índice del módulo" class="lesson-toc" data-inema-toc="">
+<strong>En este módulo</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Elige una sola salida</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Completa la ficha de alcance</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Pide una transformación fiel</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Verifica antes de ampliar</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Cierra una etapa a la vez</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Práctica: organiza tres pedidos</a>
+</li>
+</ul>
+<div aria-label="Progreso de este módulo" class="meter" data-inema-meter="modulo:1-1">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="1-1" data-inema-track="1" id="modulo-1-1">
+<section class="topic-section" data-inema-topic="modulo-1-1#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Elige una sola salida</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-1-t1-p1">“Organizar mi trabajo” describe una intención, pero no dice qué archivo debe existir al terminar. Cambia esa intención por una salida observable: una tabla con los pedidos recibidos hoy. Define también la unidad de trabajo. Una línea representa un pedido, y no un cliente o una conversación completa. Esta decisión evita que el asistente agrupe solicitudes diferentes y esconda tareas.</p>
+<p data-inema-block="m1-1-t1-p2">En este curso usaremos situaciones ficticias de un pequeño taller de servicios llamado Oficina Aurora. Necesita organizar pedidos, consultar documentos y presentar resultados. Podrás cambiar este escenario por el tuyo después de completar la práctica inicial.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t1-p3">Una salida concreta permite comparar el pedido con el resultado. Sin esa comparación, una respuesta bien escrita puede parecer finalizada aun cuando falten informaciones importantes.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Hacer</h3>
+<p>Mantener identificadores y fechas de la entrada.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Inventar una fecha para que la tabla quede completa.</p>
+</div>
+</div>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Entrada</strong>
+<span>Material disponible antes de la tarea</span>
+</div>
+<div>
+<strong>Salida</strong>
+<span>Archivo o resultado por entregar</span>
+</div>
+<div>
+<strong>Unidad</strong>
+<span>Lo que representa cada elemento</span>
+</div>
+<div>
+<strong>Alcance</strong>
+<span>Límite de la transformación</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-1#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Completa la ficha de alcance</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-1-t2-p1">Una ficha breve funciona como un acuerdo de trabajo. Describe objetivo, entrada, salida, exclusiones y criterios de aceptación. Escribe esos campos antes de elegir una herramienta. Si solo necesitas transformar texto en tabla, conectar un calendario aumenta el esfuerzo sin mejorar la primera entrega.</p>
+<p data-inema-block="m1-1-t2-p2">Incluye un caso común y uno incompleto. El caso común muestra el camino esperado; el incompleto revela cómo se comporta el proceso cuando la realidad no encaja en el ejemplo perfecto. Un plazo ausente debe seguir ausente hasta que alguien lo indique.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t2-p3">La ficha reduce idas y vueltas y ayuda a identificar cambios de alcance. Una nueva función entra en una lista futura en vez de alterar en silencio el trabajo en curso.</p>
+</div>
+<h3>Un camino para aplicar</h3>
+<ol class="timeline">
+<li>Elige la salida y escribe la ficha.</li>
+<li>Prepara un caso completo y otro incompleto.</li>
+<li>Ejecuta, compara los campos y guarda la evidencia.</li>
+</ol>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Objetivo</strong>
+<span>Una frase con verbo y resultado</span>
+</div>
+<div>
+<strong>Exclusión</strong>
+<span>Lo que queda para después</span>
+</div>
+<div>
+<strong>Aceptación</strong>
+<span>Condición observable de éxito</span>
+</div>
+<div>
+<strong>Pendencia</strong>
+<span>Dato necesario que aún falta</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-1#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Pide una transformación fiel</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-1-t3-p1">Un buen pedido informa qué campos deben preservarse, qué formato se debe usar y cómo tratar la información que falte. No pidas solo “haz una tabla bonita”. Define columnas, una línea por solicitud y la prohibición de completar datos por suposición.</p>
+<p data-inema-block="m1-1-t3-p2">Separa el texto de la instrucción y los datos de entrada. Identifica claramente el inicio y el fin de los pedidos. Esto ayuda al asistente a tratar las frases recibidas como contenido a organizar, sin confundirlas con nuevas órdenes sobre el proceso.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t3-p3">La calidad de la salida depende de la claridad de la transformación. Especificar el tratamiento de los vacíos suele ser más útil que agregar adjetivos como perfecto, completo o profesional.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Ejemplo de trabajo</span>
+<button class="copy js-only" data-copy="exemplo-1-1" type="button">Copiar</button>
+</div>
+<pre id="exemplo-1-1">
+<code>Objetivo: organizar pedidos en una tabla.
+Entrada: tres solicitudes ficticias.
+Salida: CSV con id, cliente, tarea, plazo.
+Regla: plazo ausente = pendiente.
+Fuera del alcance: enviar mensajes o programar servicios.</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Consejo práctico</strong>Mantén los identificadores y las fechas de la entrada. Registra el resultado antes de cambiar otra parte del proceso.</aside>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Formato</strong>
+<span>Columnas y organización esperadas</span>
+</div>
+<div>
+<strong>Fidelidad</strong>
+<span>Preservar lo que se recibió</span>
+</div>
+<div>
+<strong>Vacío</strong>
+<span>Información no informada</span>
+</div>
+<div>
+<strong>Separación</strong>
+<span>Distinguir instrucción de datos</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-1#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Verifica antes de ampliar</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-1-t4-p1">Haz una comparación línea por línea. El identificador, el cliente, la tarea y el plazo deben corresponder a la entrada. Una tabla con tres líneas no basta: es posible tener tres líneas y cambiar la fecha entre clientes. Verifica contenido y cantidad.</p>
+<p data-inema-block="m1-1-t4-p2">Si una línea está mal, corrige la regla que llevó al error y vuelve a ejecutar el mismo ejemplo. Guarda la entrada y la salida corregida. Esta pequeña evidencia permite ver si un cambio futuro reintrodujo el problema.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t4-p3">La conferencia convierte una impresión en prueba. También muestra dónde corregir: en la extracción, en el formato o en la regla de negocio, sin reconstruir todo el proceso.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Hacer</h3>
+<p>Preguntar por el plazo cuando esté ausente.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Agregar notificaciones antes de validar la tabla.</p>
+</div>
+</div>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Conteo</strong>
+<span>Cantidad de registros esperada</span>
+</div>
+<div>
+<strong>Correspondencia</strong>
+<span>Campo ligado al pedido correcto</span>
+</div>
+<div>
+<strong>Regresión</strong>
+<span>Error antiguo que reaparece</span>
+</div>
+<div>
+<strong>Evidencia</strong>
+<span>Entrada y salida preservadas</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-1#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Cierra una etapa a la vez</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-1-t5-p1">Una etapa termina cuando entrega lo acordado y pasa las verificaciones. Las ideas nuevas pueden ser valiosas, pero necesitan un lugar separado. Crea una lista llamada “próximas mejoras” y registra allí notificaciones, calendario y panel visual.</p>
+<p data-inema-block="m1-1-t5-p2">Usa estados simples: por hacer, en progreso, completado y bloqueado por un dato. Bloqueado no significa fracaso; significa que el proceso identificó algo que no puede inventar. Registra qué información falta y quién podrá proporcionarla.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t5-p3">Limitar el trabajo en curso reduce la sensación de tener demasiados proyectos casi listos. Así empiezas a acumular entregas pequeñas que funcionan y que se pueden combinar.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criterios para revisar tu entrega</caption>
+<thead>
+<tr>
+<th scope="col">Criterio</th>
+<th scope="col">Evidencia esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Cantidad</th>
+<td>Tres pedidos producen tres líneas.</td>
+</tr>
+<tr>
+<th scope="row">Fidelidad</th>
+<td>El cliente y la tarea permanecen asociados.</td>
+</tr>
+<tr>
+<th scope="row">Ausencia</th>
+<td>Un pedido sin fecha queda pendiente.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Antes de avanzar</strong>Pregunta por el plazo cuando esté ausente. Si algún criterio falla, describe el caso y ajusta esa parte.</aside>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Etapa</strong>
+<span>Parte con resultado independiente</span>
+</div>
+<div>
+<strong>Límite</strong>
+<span>Una entrega activa por vez</span>
+</div>
+<div>
+<strong>Bloqueo</strong>
+<span>Dependencia identificada</span>
+</div>
+<div>
+<strong>Mejora</strong>
+<span>Idea fuera del alcance actual</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-1#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Práctica: organiza tres pedidos</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-1-t6-p1">Crée una carpeta para el ejercicio y guarda el texto de entrada antes de usar el asistente. Genera la tabla y revisa los criterios de abajo. No conectes servicios: en esta práctica, la entrega es un archivo que puedes abrir.</p>
+<p data-inema-block="m1-1-t6-p2">Después de la primera ejecución, quita la fecha de otro pedido y repite. La regla debe funcionar para cualquier registro incompleto, no solo para el tercer ejemplo. Registra en una frase qué cambió y si el comportamiento siguió siendo correcto.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m1-1-t6-p3">La práctica enseña a cerrar una tarea pequeña e introduce una idea central del curso: variar la entrada para descubrir si la solución entendió la regla o solo imitó el ejemplo.</p>
+</div>
+<div class="practice">
+<h3>Tu ejercicio</h3>
+<p>A-01: Padaria Horizonte solicita revisar el menú hasta 22/10/2026. A-02: Ateliê Nuvem solicita catalogar 12 productos hasta 24/10/2026. A-03: Floricultura Vale solicita organizar preguntas frecuentes, sin informar plazo.</p>
+<a class="button small" download="" href="../../materiais/pratica-1-1.md">Descargar ficha de la práctica</a>
+</div>
+<details class="solution">
+<summary>Revisar respuesta comentada</summary>
+<pre>id,cliente,tarea,plazo
+A-01,Padaria Horizonte,Revisar el menú,2026-10-22
+A-02,Ateliê Nuvem,Catalogar 12 productos,2026-10-24
+A-03,Floricultura Vale,Organizar preguntas frecuentes,pendiente
+
+Pregunta: ¿cuál es el plazo deseado para A-03?</pre>
+</details>
+<div class="check" data-inema-check="modulo-1-1#q1">
+<h3>Comprueba tu comprensión</h3>
+<p>Un pedido no informa la fecha. ¿Qué hacer?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">Usa la fecha más cercana de los otros pedidos.</button>
+<button class="js-only" data-inema-check-option="1" type="button">Registrar pendiente y formular la pregunta necesaria.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Elimina la línea para mantener el archivo consistente.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>Registrar pendiente y formular la pregunta necesaria. La ausencia es parte de la entrada. Preservarla evita convertir una suposición en un compromiso.</p>
+</noscript>
+</div>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Caso común</strong>
+<span>Pedido con todos los campos</span>
+</div>
+<div>
+<strong>Caso incompleto</strong>
+<span>Pedido sin plazo</span>
+</div>
+<div>
+<strong>Variación</strong>
+<span>Cambiar un dato y repetir</span>
+</div>
+<div>
+<strong>Conclusión</strong>
+<span>Resultado comparado y guardado</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>Lo que queda de este módulo</h2>
+<p>Una ficha de alcance y una tabla fiel a los pedidos recibidos.</p>
+<ul>
+<li>✓ Tres pedidos producen tres líneas.</li>
+<li>✓ El cliente y la tarea permanecen asociados.</li>
+<li>✓ El pedido sin fecha queda pendiente.</li>
+</ul>
+<p class="public-notice">El progreso registra tu lectura. La práctica queda concluida cuando revisas la entrega.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Volver a la ruta</a>
+<a class="button primary" href="../trilha1/modulo-1-2.html">Siguiente módulo: Skills con criterio</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Materiales del alumno</a> · <a href="../../index.html">Inicio del curso</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-1-1#q1", "q": "Un pedido no informa la fecha. ¿Qué hacer?", "options": ["Usa la fecha más cercana de los otros pedidos.", "Registrar pendiente y formular la pregunta necesaria.", "Elimina la línea para mantener el archivo consistente."], "answer": "1", "explain": {"0": "La ausencia es parte de la entrada. Presérvala para evitar convertir una suposición en un compromiso.", "1": "La ausencia es parte de la entrada. Presérvala para evitar convertir una suposición en un compromiso.", "2": "La ausencia es parte de la entrada. Presérvala para evitar convertir una suposición en un compromiso."}}</script>
+<nav aria-label="Idioma del curso" data-course-languages=""><a href="../../../curso/trilha1/modulo-1-1.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../en/curso/trilha1/modulo-1-1.html" hreflang="en" lang="en">English</a><a aria-current="page" href="modulo-1-1.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

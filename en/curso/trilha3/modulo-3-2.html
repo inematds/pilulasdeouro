@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-en" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Turn a visual idea into comparable instructions and a consistent set." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Images with a clear briefing | Pílulas de Ouro · INEMA</title>
+
+<meta content="Images with a clear brief" property="og:title"/>
+<meta content="Turn a visual idea into comparable instructions and a consistent set." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-en", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentals", "modules": [{"id": "1-1", "title": "A request with a beginning and an end", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills with criteria", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "A second opinion that helps", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Knowledge", "modules": [{"id": "2-1", "title": "Documents the AI can read", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Evidence-based research", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagrams that truly explain", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Production", "modules": [{"id": "3-1", "title": "Interfaces that help you take action", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Images with a clear brief", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Templates and configurations without confusion", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Delivery", "modules": [{"id": "4-1", "title": "A website that’s easy to understand", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Project: request hub", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Project: delivery and knowledge kit", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha3/modulo-3-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha3/modulo-3-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha3/modulo-3-2.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha3/modulo-3-2.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha3/modulo-3-2.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-3">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Jump to content</a>
+<nav aria-label="Course navigation" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, start" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentals</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Knowledge</span>
+</a>
+<a aria-current="page" class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Production</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Delivery</span>
+</a>
+</div>
+<button aria-label="Toggle light and dark theme" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">My journey</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Appearance</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continue studying</button>
+<div aria-label="Reading preferences" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Theme</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Light</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Focus</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Text size</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Pattern</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Larger</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Big</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Reading width</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Narrow</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Medium</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Wide</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Line spacing</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compact</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Comfortable</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Font</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">System</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Accent</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Green</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Blue</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Purple</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Amber</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Course progress" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">The content is available for reading. Enable JavaScript to save progress and notes.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Start</a> / <a href="index.html">Production</a> / Module 3.2</div>
+<header class="page-head">
+<p class="badge">MODULE 3.2</p>
+<h1>Images with a clear brief</h1>
+<p>Turn a visual idea into comparable instructions and a consistent set.</p>
+<div class="page-stats">
+<div>
+<strong>6 topics</strong>
+<span>Concepts and application</span>
+</div>
+<div>
+<strong>~35 minutes</strong>
+<span>Estimated with practice</span>
+</div>
+<div>
+<strong>Hands-on</strong>
+<span>Step by step</span>
+</div>
+<div>
+<strong>Your submission</strong>
+<span>A reusable briefing and an assessment of three visual results.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Objective → Composition → Generation → Selection" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m3-2-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m3-2-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#c084fc" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m3-2-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#c084fc" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#c084fc" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#c084fc" font-size="12" text-anchor="middle" x="100.0" y="69">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Goal</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Composition</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Generation</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m3-2-False-glow)" height="76" rx="12" stroke="#c084fc" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#c084fc" font-size="12" text-anchor="middle" x="700.0" y="69">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Selection</text>
+</g>
+</svg>
+<svg aria-label="Objective → Composition → Generation → Selection" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m3-2-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m3-2-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#c084fc" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m3-2-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#c084fc" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#c084fc" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#c084fc" font-size="12" text-anchor="middle" x="180.0" y="35">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Goal</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Composition</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Generation</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m3-2-True-glow)" height="62" rx="12" stroke="#c084fc" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#c084fc" font-size="12" text-anchor="middle" x="180.0" y="305">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Selection</text>
+</g>
+</svg>
+<figcaption>A reusable brief and an evaluation of three visual outcomes.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Module index" class="lesson-toc" data-inema-toc="">
+<strong>In this module</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Explain the function of the image</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Build a brief by fields</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Treat text as a requirement</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Compare easy and difficult cases</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Preserve the series recipe</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Practice: create three coherent covers</a>
+</li>
+</ul>
+<div aria-label="Progress for this module" class="meter" data-inema-meter="modulo:3-2">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="3-2" data-inema-track="3" id="modulo-3-2">
+<section class="topic-section" data-inema-topic="modulo-3-2#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Explain the function of the image</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-2-t1-p1">A cover image needs to communicate a topic; a product image needs to show features; a diagram needs to explain relationships. Start with the function. It defines what should be highlighted and what can be simplified.</p>
+<p data-inema-block="m3-2-t1-p2">Describe the audience, context, and place of use. A small thumbnail needs to work in just a few pixels. An image for detailed reading can include more information. Don’t try to fit all objectives into a single composition.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m3-2-t1-p3">The function guides the evaluation. Instead of choosing only the most impressive image, you choose the one that communicates best what the piece needs to say.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Check words and the number of elements.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Choose only based on the impact of the first impression.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Function</strong>
+<span>Work the image must do</span>
+</div>
+<div>
+<strong>Audience</strong>
+<span>Who needs to interpret it</span>
+</div>
+<div>
+<strong>Context</strong>
+<span>Where it will be seen</span>
+</div>
+<div>
+<strong>Focus</strong>
+<span>Element carrying the message</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-3-2#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Build a brief by fields</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-2-t2-p1">Separate topic, composition, style, proportion, text, and constraints. Explicit fields make it easier to reuse the request without copying a long, ambiguous description. A library of briefs can be organized by function: cover, ad, explanation, or comparison.</p>
+<p data-inema-block="m3-2-t2-p2">An image skill helps turn those fields into a request suitable for the generator. Even so, the brief should stay readable for you. The goal isn’t to create magic words, but to make intent and boundaries clear.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m3-2-t2-p3">A structured request lets you change only what needs to change. This reduces accidental variation between images in the same series.</p>
+</div>
+<h3>A way to apply</h3>
+<ol class="timeline">
+<li>Define the function and fill in the brief fields.</li>
+<li>Produce variations by changing one decision at a time.</li>
+<li>Compare in the final dimension and save the recipe.</li>
+</ol>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Topic</strong>
+<span>What appears</span>
+</div>
+<div>
+<strong>Composition</strong>
+<span>How elements are distributed</span>
+</div>
+<div>
+<strong>Style</strong>
+<span>Visual language of the piece</span>
+</div>
+<div>
+<strong>Constraint</strong>
+<span>What must be avoided</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-3-2#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Treat text as a requirement</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-2-t3-p1">If the image needs to contain words, provide the exact text and verify every character in the output. Generation may alter spelling, punctuation, or the number of characters. For pieces where text is essential, an alternative is to generate the visual base and insert typography in an editing step.</p>
+<p data-inema-block="m3-2-t3-p2">Don’t treat a nearly correct text as done. Also check whether the composition left room for reading and whether the contrast works at the final size. The test should happen at the dimension where the piece will be used.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m3-2-t3-p3">An eye-catching image can fail on the most important information. Separating the visual base and typography provides control when textual fidelity needs to be high.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Work example</span>
+<button class="copy js-only" data-copy="exemplo-3-2" type="button">Copy</button>
+</div>
+<pre id="exemplo-3-2">
+<code>Function: cover of a fictional lesson about organization.
+Topic: three organized cards on a table.
+Composition: topic on the right; clear area on the left.
+Style: clean illustration, no logos.
+Aspect ratio: 16:9.
+Text: insert later, in an editing step.
+Series: keep framing and palette across the three covers.</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Practical tip</strong>Check words and the number of elements. Record the result before changing another part of the process.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Exact text</strong>
+<span>Content that cannot change</span>
+</div>
+<div>
+<strong>Typography</strong>
+<span>Form and arrangement of the letters</span>
+</div>
+<div>
+<strong>Clear area</strong>
+<span>Space reserved for the message</span>
+</div>
+<div>
+<strong>Final size</strong>
+<span>Actual scale of use</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-3-2#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Compare easy and difficult cases</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-2-t4-p1">Test one simple brief and another that combines several constraints. The second one helps reveal coherence limits, counting, orientation, or text issues. Record what failed in observable terms: three objects instead of four, a wrong word, or a shifted focus.</p>
+<p data-inema-block="m3-2-t4-p2">When repeating, change one variable. If you change topic, style, and proportion all at once, it will be hard to understand what improved. Not every failure needs another tool; sometimes, reducing ambiguity or separating steps is enough.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m3-2-t4-p3">Difficult cases show where the process needs human review. Controlled comparison prevents wasting attempts without learning from the results.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Keep visual constants across the pieces.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Change all variables in every attempt.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Simple case</strong>
+<span>Verifies the basic path</span>
+</div>
+<div>
+<strong>Edge case</strong>
+<span>Combines demanding constraints</span>
+</div>
+<div>
+<strong>Variable</strong>
+<span>Aspect changed in the attempt</span>
+</div>
+<div>
+<strong>Record</strong>
+<span>Described failure in a verifiable way</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-3-2#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Preserve the series recipe</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-2-t5-p1">Save the brief, the model used, the dimensions, and the available parameters. If there is a reference image, record which one was used. The recipe doesn’t guarantee identical reproduction across every job, but it helps you understand the decisions that produced the result.</p>
+<p data-inema-block="m3-2-t5-p2">For a series, define constant elements: palette, framing, and the text area. Let the topic vary within that set. Review the pieces side by side to spot deviations that go unnoticed when each one is evaluated in isolation.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m3-2-t5-p3">Consistency comes from observable rules and reviewing the set. A recipe lets you continue the series without relying on the memory of whoever created the first piece.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criteria for checking your submission</caption>
+<thead>
+<tr>
+<th scope="col">Criterion</th>
+<th scope="col">Expected evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Clarity</th>
+<td>The topic is recognized at the size of use.</td>
+</tr>
+<tr>
+<th scope="row">Text</th>
+<td>There is space and contrast for the title.</td>
+</tr>
+<tr>
+<th scope="row">Series</th>
+<td>All three pieces share visual rules.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Before moving forward</strong>Keep visual constants across the pieces. If any criterion fails, describe the case and adjust that part.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Recipe</strong>
+<span>Recorded brief and parameters</span>
+</div>
+<div>
+<strong>Constant</strong>
+<span>Repeated element in the series</span>
+</div>
+<div>
+<strong>Variation</strong>
+<span>Specific topic for the piece</span>
+</div>
+<div>
+<strong>Curate</strong>
+<span>Choose based on criteria</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-3-2#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Practice: create three coherent covers</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m3-2-t6-p1">Prepare three briefs for a fictional series about organization, research, and delivery. Use the same aspect ratio and the same area reserved for the title. You can generate images or start with simple sketches; the core practice is making the criteria comparable.</p>
+<p data-inema-block="m3-2-t6-p2">Assess topic clarity, space for text, consistency, and legibility. If you use a generator, identify the output as generated image and record the recipe. Don’t attribute the exercise to client photos or real results that don’t exist.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m3-2-t6-p3">The practice produces a small system of visual decisions. It can be reused for covers of modules, presentation materials, or project documentation.</p>
+</div>
+<div class="practice">
+<h3>Your exercise</h3>
+<p>Create briefs for Organization, Research, and Delivery. Keep a 16:9 ratio, a discreet background, and space for the title on the left. Explain one allowed difference and two constants.</p>
+<a class="button small" download="" href="../../materiais/pratica-3-2.md">Download practice sheet</a>
+</div>
+<details class="solution">
+<summary>Check the commented answer</summary>
+<pre>Allowed difference: the object representing each theme. Constants: framing and title area. The evaluation should compare topic recognition and consistency across the three pieces, as well as correctness of any inserted text.</pre>
+</details>
+<div class="check" data-inema-check="modulo-3-2#q1">
+<h3>Check your understanding</h3>
+<p>An image came out beautiful, but it changed one word in the title. Is it ready?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">Yes, if the composition is strong.</button>
+<button class="js-only" data-inema-check-option="1" type="button">No; correct the text or separate it in an editing step.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Yes, if the mistake is small.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>No; correct the text or separate it in an editing step. Textual information is a requirement of the piece and needs to be checked like any other data.</p>
+</noscript>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Series</strong>
+<span>Pieces with common language</span>
+</div>
+<div>
+<strong>Brief</strong>
+<span>Readable creation instruction</span>
+</div>
+<div>
+<strong>Evaluation</strong>
+<span>Comparison against criteria</span>
+</div>
+<div>
+<strong>Record</strong>
+<span>Recipe and associated result</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>What stays from this module</h2>
+<p>A reusable brief and an evaluation of three visual outcomes.</p>
+<ul>
+<li>✓ The topic is recognized at the size of use.</li>
+<li>✓ There is space and contrast for the title.</li>
+<li>✓ All three pieces share visual rules.</li>
+</ul>
+<p class="public-notice">Progress records your reading. The practice is completed when you check the submission.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Back to the track</a>
+<a class="button primary" href="../trilha3/modulo-3-3.html">Next module: Templates and settings without confusion</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Student materials</a> · <a href="../../index.html">Course start</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-3-2#q1", "q": "An image came out beautiful, but it changed one word in the title. Is it ready?", "options": ["Yes, if the composition is strong.", "No; correct the text or separate it in an editing step.", "Yes, if the mistake is small."], "answer": "1", "explain": {"0": "Textual information is a requirement of the artifact and must be verified like any other data.", "1": "Textual information is a requirement of the artifact and must be verified like any other data.", "2": "Textual information is a requirement of the artifact and must be verified like any other data."}}</script>
+<nav aria-label="Course language" data-course-languages=""><a href="../../../curso/trilha3/modulo-3-2.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-3-2.html" hreflang="en" lang="en">English</a><a href="../../../es/curso/trilha3/modulo-3-2.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

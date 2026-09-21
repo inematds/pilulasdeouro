@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-es" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Construya un dossier que separa lo que los documentos dicen de lo que usted está concluyendo." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Investigación con evidencias | Pílulas de Ouro · INEMA</title>
+
+<meta content="Investigación con evidencias" property="og:title"/>
+<meta content="Construya un dossier que separa lo que los documentos dicen de lo que usted está concluyendo." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-es", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Una solicitud con principio y fin", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills con criterio", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Una segunda opinión que ayuda", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Conocimiento", "modules": [{"id": "2-1", "title": "Documentos que la IA puede leer", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Investigación con evidencias", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagramas que explican de verdad", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Producción", "modules": [{"id": "3-1", "title": "Interfaces que ayudan a actuar", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Imágenes con un briefing claro", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Plantillas y configuraciones sin confusión", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Entrega", "modules": [{"id": "4-1", "title": "Un sitio fácil de entender", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Proyecto: central de pedidos", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Proyecto: kit de entrega y conocimiento", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/modulo-2-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha2/modulo-2-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha2/modulo-2-2.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/modulo-2-2.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha2/modulo-2-2.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-2">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación del curso" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, inicio" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentos</span>
+</a>
+<a aria-current="page" class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Conocimiento</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Producción</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Entrega</span>
+</a>
+</div>
+<button aria-label="Alternar tema claro y oscuro" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">Mi recorrido</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Apariencia</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continuar estudio</button>
+<div aria-label="Preferencias de lectura" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Tema</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Claro</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Enfoque</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Tamaño del texto</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Patrón</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Mayor</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Grande</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Ancho de lectura</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Estrecha</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Media</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Amplia</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Interlineado</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compacta</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Cómoda</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Fuente</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">Sistema</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Acento</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Verde</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Azul</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Morado</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Ámbar</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Progreso del curso" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">El contenido está disponible para lectura. Activa JavaScript para guardar progreso y anotaciones.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Inicio</a> / <a href="index.html">Conocimiento</a> / Módulo 2.2</div>
+<header class="page-head">
+<p class="badge">MÓDULO 2.2</p>
+<h1>Investigación con evidencias</h1>
+<p>Construya un dossier que separa lo que los documentos dicen de lo que usted está concluyendo.</p>
+<div class="page-stats">
+<div>
+<strong>6 temas</strong>
+<span>Conceptos y aplicación</span>
+</div>
+<div>
+<strong>~35 minutos</strong>
+<span>Estimación con práctica</span>
+</div>
+<div>
+<strong>Práctico</strong>
+<span>Paso a paso</span>
+</div>
+<div>
+<strong>Tu entrega</strong>
+<span>Un informe corto con preguntas, evidencias y vacíos visibles.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Pregunta → Documentos → Evidencias → Dossier" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m2-2-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m2-2-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m2-2-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="100.0" y="69">ETAPA 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Pregunta</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">ETAPA 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Documentos</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">ETAPA 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Evidencias</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m2-2-False-glow)" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="700.0" y="69">ETAPA 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Dossier</text>
+</g>
+</svg>
+<svg aria-label="Pregunta → Documentos → Evidencias → Dossier" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m2-2-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m2-2-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m2-2-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="35">ETAPA 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Pregunta</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">ETAPA 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Documentos</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">ETAPA 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Evidencias</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m2-2-True-glow)" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="305">ETAPA 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Dossier</text>
+</g>
+</svg>
+<figcaption>Un informe corto con preguntas, evidencias y vacíos visibles.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Índice del módulo" class="lesson-toc" data-inema-toc="">
+<strong>En este módulo</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Comience con una pregunta que se pueda responder</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Arme un conjunto documental coherente</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Exija ubicación para las afirmaciones</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Trate las divergencias como información</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Elija la salida según la tarea</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Práctica: responda sin completar vacíos</a>
+</li>
+</ul>
+<div aria-label="Progreso de este módulo" class="meter" data-inema-meter="modulo:2-2">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
+<section class="topic-section" data-inema-topic="modulo-2-2#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Comience con una pregunta que se pueda responder</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-2-t1-p1">Una investigación útil nace de una decisión. “Quiero aprender sobre atención” es amplio; “¿qué dudas repetidas pueden responderse con el catálogo disponible?” define una pregunta y una base. Escriba también qué no se responderá.</p>
+<p data-inema-block="m2-2-t1-p2">Defina público, período y profundidad. Un resumen para decidir la próxima mejora necesita menos extensión y más claridad que un levantamiento de largo plazo. La herramienta de investigación debe servir a la pregunta, y no definir el trabajo solo porque ofrece muchos tipos de salida.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m2-2-t1-p3">Una pregunta delimitada permite reconocer cuándo la investigación terminó. También hace visibles los vacíos que exigen nuevo material en lugar de generar más texto.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Hacer</h3>
+<p>Abrir los fragmentos que sustentan la respuesta.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Aceptar referencias sin comprobar el contenido.</p>
+</div>
+</div>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Pregunta</strong>
+<span>Qué necesita aclararse</span>
+</div>
+<div>
+<strong>Decisión</strong>
+<span>Uso esperado de la respuesta</span>
+</div>
+<div>
+<strong>Recorte</strong>
+<span>Límites de tema y período</span>
+</div>
+<div>
+<strong>Vacío</strong>
+<span>Qué la base no permite concluir</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-2#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Arme un conjunto documental coherente</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-2-t2-p1">Organice los documentos por tema, fecha y responsable. Elimine duplicados e identifique versiones en conflicto. Un catálogo antiguo y otro actualizado pueden mostrar plazos diferentes; la investigación necesita percibir esa divergencia.</p>
+<p data-inema-block="m2-2-t2-p2">Herramientas como NotebookLM pueden apoyar la lectura de un conjunto de documentos. Empiece por el flujo disponible en su cuenta y confirme los recursos actuales. Si opta por una CLI, verifique quién la mantiene, su autenticación y los comandos de ayuda; no asuma que cualquier integración sea oficial.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m2-2-t2-p3">La calidad de la respuesta depende del material consultado. Una herramienta sofisticada no resuelve automáticamente documentos contradictorios, incompletos o fuera de contexto.</p>
+</div>
+<h3>Un camino para aplicar</h3>
+<ol class="timeline">
+<li>Delimite la pregunta y seleccione los documentos.</li>
+<li>Cree una matriz de afirmaciones y evidencias.</li>
+<li>Genere una salida, revísela y registre las lagunas.</li>
+</ol>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Conjunto</strong>
+<span>Documentos usados en la investigación</span>
+</div>
+<div>
+<strong>Actualidad</strong>
+<span>Fecha relevante para la pregunta</span>
+</div>
+<div>
+<strong>Conflicto</strong>
+<span>Información incompatible</span>
+</div>
+<div>
+<strong>Procedencia</strong>
+<span>Quién produjo el documento</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-2#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Exija localización para las afirmaciones</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-2-t3-p1">Pida que cada conclusión central venga acompañada de una localización: documento, sección o fragmento identificable. Luego abra esa localización y verifique si sustenta la frase. Una referencia puede existir y aun así no demostrar la afirmación.</p>
+<p data-inema-block="m2-2-t3-p2">Separe cita, paráfrasis e inferencia. La cita reproduce palabras; la paráfrasis reexplica una idea; la inferencia conecta evidencias para llegar a una conclusión. En el informe, deje claro cuándo está infiriendo algo que no aparece directamente en los documentos.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m2-2-t3-p3">La trazabilidad reduce la probabilidad de que una respuesta fluida oculte una afirmación sin sustento. Permite que otra persona verifique el análisis sin repetir toda la investigación.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Ejemplo de trabajo</span>
+<button class="copy js-only" data-copy="exemplo-2-2" type="button">Copiar</button>
+</div>
+<pre id="exemplo-2-2">
+<code>Pregunta: ¿qué plazos puedo informar al cliente?
+Para cada afirmación, informe:
+- documento y sección que la sustentan;
+- si es regla, excepción o inferencia;
+- qué no puede concluirse.
+Salida: informe en portugués con hasta 300 palabras.</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Consejo práctico</strong>Abrir los fragmentos que sustentan la respuesta. Registre el resultado antes de cambiar otra parte del proceso.</aside>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Afirmación</strong>
+<span>Frase que necesita apoyo</span>
+</div>
+<div>
+<strong>Localización</strong>
+<span>Dónde se puede comprobar la evidencia</span>
+</div>
+<div>
+<strong>Paráfrasis</strong>
+<span>Explicación con otras palabras</span>
+</div>
+<div>
+<strong>Inferencia</strong>
+<span>Conclusión construida a partir de evidencias</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-2#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Trate las divergencias como información</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-2-t4-p1">Cuando dos documentos divergen, no haga un promedio ni elija en silencio el valor más conveniente. Registre ambos, sus fechas y la regla usada para decidir cuál aplica. Si no existe una regla, mantenga la cuestión abierta.</p>
+<p data-inema-block="m2-2-t4-p2">En un taller, el catálogo puede decir cinco días y un mensaje reciente puede mencionar tres. El mensaje puede ser una excepción para un pedido específico. Sin ese contexto, convertir tres días en una promesa general sería un error.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m2-2-t4-p3">Los conflictos ayudan a descubrir que una regla depende de condiciones. Reconocer esas condiciones produce mejores respuestas que intentar eliminar toda la incertidumbre del informe.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Hacer</h3>
+<p>Distinguir regla general de excepción.</p>
+</div>
+<div class="avoid">
+<h3>✗ Evitar</h3>
+<p>Prometer una condición que aparece como una posibilidad.</p>
+</div>
+</div>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Divergencia</strong>
+<span>Valores que no coinciden</span>
+</div>
+<div>
+<strong>Excepción</strong>
+<span>Condición fuera de la regla general</span>
+</div>
+<div>
+<strong>Vigencia</strong>
+<span>Cuándo se aplica una información</span>
+</div>
+<div>
+<strong>Incertidumbre</strong>
+<span>Límite explícito de la conclusión</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-2#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Elija la salida según la tarea</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-2-t5-p1">Un informe sirve para profundizar; una presentación ayuda a conducir una conversación; un cuestionario verifica la comprensión. Producir todos los formatos a la vez aumenta el trabajo de revisión. Elija primero lo que la persona necesita usar.</p>
+<p data-inema-block="m2-2-t5-p2">Defina idioma, extensión y público. Después compare cada salida con la misma matriz de evidencias. Una presentación no debería añadir certezas que el informe no tiene. Si genera audio o video en otra etapa, mantenga esa misma disciplina de contenido.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m2-2-t5-p3">El cambio de formato puede alterar el sentido por simplificación excesiva. Una base común permite reutilizar el conocimiento sin reinventar los hechos en cada entrega.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criterios para revisar tu entrega</caption>
+<thead>
+<tr>
+<th scope="col">Criterio</th>
+<th scope="col">Evidencia esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Apoyo</th>
+<td>Cada afirmación central tiene localización.</td>
+</tr>
+<tr>
+<th scope="row">Conflictos</th>
+<td>La divergencia se explica.</td>
+</tr>
+<tr>
+<th scope="row">Límites</th>
+<td>El dato faltante sigue siendo explícito.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Antes de avanzar</strong>Distinguir regla general de excepción. Si algún criterio falla, describa el caso y ajuste esa parte.</aside>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Formato</strong>
+<span>Medio adecuado para el uso</span>
+</div>
+<div>
+<strong>Público</strong>
+<span>Quién necesita entender</span>
+</div>
+<div>
+<strong>Síntesis</strong>
+<span>Reducción sin cambiar el sentido</span>
+</div>
+<div>
+<strong>Consistencia</strong>
+<span>La misma evidencia entre salidas</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-2#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Práctica: responda sin completar lagunas</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-2-t6-p1">Use los dos documentos ficticios del ejercicio y escriba una respuesta corta. Identifique el plazo estándar, explique la excepción y diga qué información todavía necesita confirmarse. No convierta una posibilidad en garantía.</p>
+<p data-inema-block="m2-2-t6-p2">Incluya dos preguntas de verificación para quien lea el dossier. Deben medir la comprensión de la diferencia entre regla y excepción, y no la memorización de una frase. Al final, registre qué documentos fueron suficientes y qué datos faltaron.</p>
+</div>
+<div class="why">
+<h3>Por qué aprender</h3>
+<p data-inema-block="m2-2-t6-p3">La práctica muestra cómo producir una respuesta útil incluso cuando la base no resuelve todo. El dossier puede orientar la siguiente pregunta en lugar de fingir que se cerró el tema.</p>
+</div>
+<div class="practice">
+<h3>Tu ejercicio</h3>
+<p>Documento A, Catálogo, sección Plazos: “Organización de catálogo: cinco días hábiles después de los archivos completos”. Documento B, mensaje de atención: “Quizá podamos entregar en tres días si el material viene revisado”. ¿Qué plazo comunicar?</p>
+<a class="button small" download="" href="../../materiais/pratica-2-2.md">Descargar ficha de la práctica</a>
+</div>
+<details class="solution">
+<summary>Revisar respuesta comentada</summary>
+<pre>El plazo documentado es cinco días hábiles después de la recepción completa. Tres días es una posibilidad condicionada, aún no confirmada. Antes de prometer la excepción, confirmar capacidad y revisión del material. Preguntas de verificación: ¿cuándo empieza el plazo? ¿Qué hace que la entrega en tres días sea diferente de la regla?</pre>
+</details>
+<div class="check" data-inema-check="modulo-2-2#q1">
+<h3>Comprueba tu comprensión</h3>
+<p>Dos fuentes divergen. ¿Qué conducta preserva la calidad de la investigación?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">Elegir la respuesta más corta.</button>
+<button class="js-only" data-inema-check-option="1" type="button">Ocultar la divergencia en la presentación.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Registrar contexto, fechas y la regla de decisión.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>Registrar contexto, fechas y la regla de decisión. La divergencia debe explicarse; eliminarla sin justificación produce una falsa certeza.</p>
+</noscript>
+</div>
+<h3>Conceptos clave</h3>
+<div class="concepts">
+<div>
+<strong>Regla</strong>
+<span>Estándar documentado</span>
+</div>
+<div>
+<strong>Excepción</strong>
+<span>Aplicación condicionada</span>
+</div>
+<div>
+<strong>Siguiente pregunta</strong>
+<span>Dado que falta obtener</span>
+</div>
+<div>
+<strong>Dossier</strong>
+<span>Respuesta con evidencias y límites</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Marcar como leído</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">Tengo dudas</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>Lo que queda de este módulo</h2>
+<p>Un informe corto con preguntas, evidencias y vacíos visibles.</p>
+<ul>
+<li>✓ Cada afirmación central tiene localización.</li>
+<li>✓ La divergencia se explica.</li>
+<li>✓ El dato faltante sigue siendo explícito.</li>
+</ul>
+<p class="public-notice">El progreso registra tu lectura. La práctica queda concluida cuando revisas la entrega.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Volver a la ruta de aprendizaje</a>
+<a class="button primary" href="../trilha2/modulo-2-3.html">Siguiente módulo: Diagramas que explican de verdad</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Materiales del alumno</a> · <a href="../../index.html">Inicio del curso</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-2-2#q1", "q": "Dos fuentes divergen. ¿Qué conducta preserva la calidad de la investigación?", "options": ["Elegir la respuesta más corta.", "Ocultar la divergencia en la presentación.", "Registrar contexto, fechas y la regla de decisión."], "answer": "2", "explain": {"0": "La divergencia debe explicarse; eliminarla sin justificación produce una falsa certeza.", "1": "La divergencia debe explicarse; eliminarla sin justificación produce una falsa certeza.", "2": "La divergencia debe explicarse; eliminarla sin justificación produce una falsa certeza."}}</script>
+<nav aria-label="Idioma del curso" data-course-languages=""><a href="../../../curso/trilha2/modulo-2-2.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../en/curso/trilha2/modulo-2-2.html" hreflang="en" lang="en">English</a><a aria-current="page" href="modulo-2-2.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

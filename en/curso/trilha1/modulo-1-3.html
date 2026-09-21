@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-en" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Use independent review to find reproducible failures, without trading evidence for opinion." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>A second opinion that helps | Pílulas de Ouro · INEMA</title>
+
+<meta content="A second opinion that helps" property="og:title"/>
+<meta content="Use independent review to find reproducible failures, without trading evidence for opinion." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-en", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentals", "modules": [{"id": "1-1", "title": "A request with a beginning and an end", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills with criteria", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "A second opinion that helps", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Knowledge", "modules": [{"id": "2-1", "title": "Documents the AI can read", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Evidence-based research", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagrams that truly explain", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Production", "modules": [{"id": "3-1", "title": "Interfaces that help you take action", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Images with a clear brief", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Templates and configurations without confusion", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Delivery", "modules": [{"id": "4-1", "title": "A website that’s easy to understand", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Project: request hub", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Project: delivery and knowledge kit", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha1/modulo-1-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha1/modulo-1-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha1/modulo-1-3.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha1/modulo-1-3.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha1/modulo-1-3.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-1">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Jump to content</a>
+<nav aria-label="Course navigation" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, start" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a aria-current="page" class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentals</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Knowledge</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Production</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Delivery</span>
+</a>
+</div>
+<button aria-label="Toggle light and dark theme" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">My journey</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Appearance</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continue studying</button>
+<div aria-label="Reading preferences" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Theme</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Light</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Focus</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Text size</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Pattern</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Larger</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Big</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Reading width</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Narrow</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Medium</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Wide</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Line spacing</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compact</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Comfortable</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Font</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">System</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Accent</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Green</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Blue</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Purple</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Amber</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Course progress" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">The content is available for reading. Enable JavaScript to save progress and notes.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Start</a> / <a href="index.html">Fundamentals</a> / Module 1.3</div>
+<header class="page-head">
+<p class="badge">MODULE 1.3</p>
+<h1>A second opinion that helps</h1>
+<p>Use independent review to find reproducible failures, without trading evidence for opinion.</p>
+<div class="page-stats">
+<div>
+<strong>6 topics</strong>
+<span>Concepts and application</span>
+</div>
+<div>
+<strong>~35 minutes</strong>
+<span>Estimated with practice</span>
+</div>
+<div>
+<strong>Hands-on</strong>
+<span>Step by step</span>
+</div>
+<div>
+<strong>Your delivery</strong>
+<span>A short report with a reproduced issue and its minimal fix.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Change → Review → Reproduce → Fix" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m1-3-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m1-3-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#34d399" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m1-3-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#34d399" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#34d399" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="100.0" y="69">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Change</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Review</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Reproduction</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m1-3-False-glow)" height="76" rx="12" stroke="#34d399" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="700.0" y="69">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Fix</text>
+</g>
+</svg>
+<svg aria-label="Change → Review → Reproduce → Fix" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m1-3-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m1-3-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#34d399" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m1-3-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#34d399" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#34d399" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="180.0" y="35">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Change</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Review</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Reproduction</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m1-3-True-glow)" height="62" rx="12" stroke="#34d399" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="180.0" y="305">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Fix</text>
+</g>
+</svg>
+<figcaption>A short report with a reproduced issue and its minimal fix.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Module index" class="lesson-toc" data-inema-toc="">
+<strong>In this module</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Provide context to the reviewer</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Prepare a comparable baseline</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Request actionable findings</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Test repetition and interruption</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Exit a cycle of attempts</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Practice: find a duplication</a>
+</li>
+</ul>
+<div aria-label="Progress for this module" class="meter" data-inema-meter="modulo:1-3">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="1-3" data-inema-track="1" id="modulo-1-3">
+<section class="topic-section" data-inema-topic="modulo-1-3#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Provide context to the reviewer</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-3-t1-p1">A review starts with the change you want to assess and the expected behavior. Provide input, desired outcome, involved files, and checks already performed. The reviewer needs to know what can be considered correct—not just receive a huge directory.</p>
+<p data-inema-block="m1-3-t1-p2">A second AI, like Codex, can offer another analysis, but it doesn’t automatically become more reliable. Treat its suggestions as hypotheses that should point to a concrete scenario. Value appears when the review finds something that can be demonstrated.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m1-3-t1-p3">Context reduces generic comments and prevents the reviewer from proposing changes that contradict the goal. It also limits the cost and scope of the review.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Relate each finding to a behavior.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Accept a review because it sounds convincing.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Contract</strong>
+<span>Expected behavior</span>
+</div>
+<div>
+<strong>Diff</strong>
+<span>Change between versions</span>
+</div>
+<div>
+<strong>Hypothesis</strong>
+<span>Possible issue to investigate</span>
+</div>
+<div>
+<strong>Reproduction</strong>
+<span>Steps that show the effect</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-3#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Prepare a comparable baseline</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-3-t2-p1">In a Git project, the diff shows what changed. Before reviewing, check the current folder and the repository state. Separate your own files from change-related materials that should not be published. A review of unversioned changes may include new files.</p>
+<p data-inema-block="m1-3-t2-p2">With the Codex CLI installed and authenticated, consult the local help and use a review compatible with the available version. The example below shows a review of changes that are not committed. It doesn’t replace testing the application.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m1-3-t2-p3">A clear baseline prevents the reviewer from comparing the wrong files or treating old code as part of the current change. Checking status also avoids accidentally publishing setup data.</p>
+</div>
+<h3>A way to apply</h3>
+<ol class="timeline">
+<li>Describe the change and choose a baseline.</li>
+<li>Request evidence, reproduce, and classify the findings.</li>
+<li>Apply the smallest fix and repeat the scenario.</li>
+</ol>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Baseline</strong>
+<span>Version used for the comparison</span>
+</div>
+<div>
+<strong>Status</strong>
+<span>New and modified files</span>
+</div>
+<div>
+<strong>Scope</strong>
+<span>The set to review</span>
+</div>
+<div>
+<strong>Local help</strong>
+<span>Contract of the installed CLI</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-3#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Request actionable findings</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-3-t3-p1">Ask each finding to describe the trigger, effect, location, and how to reproduce it. Prefer “two clicks send the same order twice” over “improve robustness.” The first statement allows building a test; the second does not define behavior.</p>
+<p data-inema-block="m1-3-t3-p2">Differentiate functional errors, maintenance, and style preferences. All can matter, but they shouldn’t all receive the same priority. An export that includes records from another customer requires a different response than a variable name that’s not clear enough.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m1-3-t3-p3">Actionable findings make the review a decision tool. You can prioritize by impact and verify whether the smallest change actually resolved the case.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Work example</span>
+<button class="copy js-only" data-copy="exemplo-1-3" type="button">Copy</button>
+</div>
+<pre id="exemplo-1-3">
+<code>git status --short
+git diff --stat
+# Check the options of the installed version:
+codex review --help
+# Review changes that are not committed yet:
+codex review --uncommitted</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Practical tip</strong>Relate each finding to a behavior. Record the result before changing another part of the process.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Trigger</strong>
+<span>Condition that starts the failure</span>
+</div>
+<div>
+<strong>Effect</strong>
+<span>Observed outcome</span>
+</div>
+<div>
+<strong>Priority</strong>
+<span>Impact and probability</span>
+</div>
+<div>
+<strong>Minimal fix</strong>
+<span>A change sufficient to resolve the issue</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-3#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Test repetition and interruption</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-3-t4-p1">Many errors appear on the second run. If an order is resent after a connection failure, the operation needs to know whether it has already been processed. An idempotency key identifies the same intent to avoid creating two outcomes.</p>
+<p data-inema-block="m1-3-t4-p2">Another scenario is an interruption in the middle of an update. Recording half of an operation can leave the data inconsistent. In exercises, simulate the failure between steps and observe the final state. Don’t conclude that a flow is correct just because it works once.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m1-3-t4-p3">These scenarios are easy to forget in demos. Testing repetition and interruption reveals problems that a superficial read or a single execution doesn’t show.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Save the case that reproduced the error.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Correct the style and critical failure as if they were the same.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Retry</strong>
+<span>New attempt of the same operation</span>
+</div>
+<div>
+<strong>Idempotency</strong>
+<span>Repeat without duplicating the effect</span>
+</div>
+<div>
+<strong>Atomicity</strong>
+<span>Complete everything or don’t apply it at all</span>
+</div>
+<div>
+<strong>Interruption</strong>
+<span>Failure between steps</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-3#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Get out of a retry cycle</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-3-t5-p1">When a correction fails repeatedly, record what has already been tried and the result of each attempt. Reduce the problem to a small entry that still fails. Hand over this case for a new review.</p>
+<p data-inema-block="m1-3-t5-p2">Switching models without organizing the evidence can simply restart the same cycle. The most important change is to provide a smaller experiment, one hypothesis at a time, and a clear stop condition. Preserve the case that was failing after the correction.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m1-3-t5-p3">A minimal case reduces the number of possible explanations. It lets you distinguish a logic problem, an incompatible configuration, and an unavailable dependency.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criteria for checking your submission</caption>
+<thead>
+<tr>
+<th scope="col">Criterion</th>
+<th scope="col">Expected evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Reproduction</th>
+<td>Two identical inputs demonstrate the problem.</td>
+</tr>
+<tr>
+<th scope="row">Fix</th>
+<td>The same intent produces a single effect.</td>
+</tr>
+<tr>
+<th scope="row">Conflict</th>
+<td>Divergent content is not silently discarded.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Before moving forward</strong>Save the case that reproduced the error. If any criterion fails, describe the case and adjust that part.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Minimal case</strong>
+<span>Smallest input that keeps failing</span>
+</div>
+<div>
+<strong>History</strong>
+<span>Attempts and results</span>
+</div>
+<div>
+<strong>Single hypothesis</strong>
+<span>One tested cause at a time</span>
+</div>
+<div>
+<strong>Stop</strong>
+<span>Objective completion condition</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-1-3#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Practice: find a duplication</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m1-3-t6-p1">Imagine a fictitious form that adds requests to a list. The same identifier can arrive twice. Describe how to reproduce the duplication and propose a rule that keeps only one effect for the same request.</p>
+<p data-inema-block="m1-3-t6-p2">It’s not enough to hide the second line on the screen. The rule must act on the operation record. Also explain what to do when the identifier is the same but the content has changed: this requires handling a conflict, not silently discarding the information.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m1-3-t6-p3">The practice links review, testing, and business behavior. You learn to verify the real effect of the correction and to recognize when two seemingly identical entries represent different situations.</p>
+</div>
+<div class="practice">
+<h3>Your exercise</h3>
+<p>The R-14 order, “review catalog,” arrives twice due to a new send attempt. Then R-14 arrives with “review contract.” Define the expected result for each receipt.</p>
+<a class="button small" download="" href="../../materiais/pratica-1-3.md">Download practice sheet</a>
+</div>
+<details class="solution">
+<summary>Check the commented answer</summary>
+<pre>First R-14: record the order. Second R-14 with identical content: return the existing record, without duplicating. Third R-14 with different content: flag a conflict for review. Test the count and the stored content after the three entries.</pre>
+</details>
+<div class="check" data-inema-check="modulo-1-3#q1">
+<h3>Check your understanding</h3>
+<p>The reviewer wrote, “there is a risk of duplication.” What’s missing?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">A reproducible scenario with input and the expected effect.</button>
+<button class="js-only" data-inema-check-option="1" type="button">Automatically switch language.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Accept the find without testing.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>A reproducible scenario with input and the expected effect. The review must turn the hypothesis into a case that can be observed and repeated.</p>
+</noscript>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Identifier</strong>
+<span>Stable key for the request</span>
+</div>
+<div>
+<strong>Duplication</strong>
+<span>Two effects for the same intent</span>
+</div>
+<div>
+<strong>Conflict</strong>
+<span>Same key with different content</span>
+</div>
+<div>
+<strong>Return test</strong>
+<span>Repeat the scenario after correcting it</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>What stays from this module</h2>
+<p>A short report with a reproduced issue and its minimal fix.</p>
+<ul>
+<li>✓ Two identical inputs demonstrate the problem.</li>
+<li>✓ The same intent produces a single effect.</li>
+<li>✓ Divergent content is not silently discarded.</li>
+</ul>
+<p class="public-notice">Progress records your reading. The practice is completed when you check the submission.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Back to the learning track</a>
+<a class="button primary" href="../trilha2/modulo-2-1.html">Next module: Documents that the AI can read</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Student materials</a> · <a href="../../index.html">Course start</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-1-3#q1", "q": "The reviewer wrote, “there is a risk of duplication.” What’s missing?", "options": ["A reproducible scenario with input and the expected effect.", "Automatically switch language.", "Accept the find without testing."], "answer": "0", "explain": {"0": "A precise review must transform the hypothesis into a case that can be observed and repeated.", "1": "A precise review must transform the hypothesis into a case that can be observed and repeated.", "2": "A precise review must transform the hypothesis into a case that can be observed and repeated."}}</script>
+<nav aria-label="Course language" data-course-languages=""><a href="../../../curso/trilha1/modulo-1-3.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-1-3.html" hreflang="en" lang="en">English</a><a href="../../../es/curso/trilha1/modulo-1-3.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

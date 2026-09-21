@@ -17,3 +17,7 @@ Curso concluído no formato INEMA v2 escolhido pelo usuário: 4 trilhas, 12 mód
 - PRO: `b72bd81` (origin).
 - Base gerada: 18.248 itens, incluindo 276 cursos e 234 projetos. O novo curso está classificado.
 - Os catálogos foram finalizados em worktrees isoladas. Uma edição simultânea de JEV entrou no mesmo commit do portal e foi preservada; não reverter alterações alheias.
+
+## Multilíngue — 21/09/2026 — v1.1.0
+
+PT na raiz, EN em en/, ES em es/. Traduções completas em i18n/, build offline com scripts/build_locales.py. Testes e custos no WiFi: RELATORIO-CINCO-CURSOS-TRILINGUES-2026-09-21.md. Dados de laboratório/comandos preservados; progresso separado por idioma.

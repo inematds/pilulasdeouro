@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-en" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Gather documentation, research, and verification so another person can continue the work." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Project: delivery and knowledge kit | Pílulas de Ouro · INEMA</title>
+
+<meta content="Project: delivery and knowledge kit" property="og:title"/>
+<meta content="Gather documentation, research, and verification so another person can continue the work." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-en", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentals", "modules": [{"id": "1-1", "title": "A request with a beginning and an end", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills with criteria", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "A second opinion that helps", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Knowledge", "modules": [{"id": "2-1", "title": "Documents the AI can read", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Evidence-based research", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagrams that truly explain", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Production", "modules": [{"id": "3-1", "title": "Interfaces that help you take action", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Images with a clear brief", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Templates and configurations without confusion", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Delivery", "modules": [{"id": "4-1", "title": "A website that’s easy to understand", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Project: request hub", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Project: delivery and knowledge kit", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha4/modulo-4-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha4/modulo-4-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha4/modulo-4-3.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha4/modulo-4-3.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha4/modulo-4-3.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-4">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Jump to content</a>
+<nav aria-label="Course navigation" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, start" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentals</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Knowledge</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Production</span>
+</a>
+<a aria-current="page" class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Delivery</span>
+</a>
+</div>
+<button aria-label="Toggle light and dark theme" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">My journey</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Appearance</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continue studying</button>
+<div aria-label="Reading preferences" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Theme</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Light</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Focus</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Text size</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Pattern</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Larger</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Big</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Reading width</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Narrow</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Medium</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Wide</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Line spacing</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compact</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Comfortable</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Font</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">System</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Accent</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Green</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Blue</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Purple</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Amber</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Course progress" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">The content is available for reading. Enable JavaScript to save progress and notes.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Start</a> / <a href="index.html">Delivery</a> / Module 4.3</div>
+<header class="page-head">
+<p class="badge">MODULE 4.3</p>
+<h1>Project: delivery and knowledge kit</h1>
+<p>Gather documentation, research, and verification so another person can continue the work.</p>
+<div class="page-stats">
+<div>
+<strong>6 topics</strong>
+<span>Concepts and application</span>
+</div>
+<div>
+<strong>~35 minutes</strong>
+<span>Estimated with practice</span>
+</div>
+<div>
+<strong>Hands-on</strong>
+<span>Step by step</span>
+</div>
+<div>
+<strong>Your delivery</strong>
+<span>A delivery kit with instructions, a map, evidence, and next steps.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Organize → Explain → Verify → Deliver" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m4-3-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m4-3-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#fbbf24" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m4-3-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#fbbf24" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#fbbf24" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#fbbf24" font-size="12" text-anchor="middle" x="100.0" y="69">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Organize</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Explain</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Check</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m4-3-False-glow)" height="76" rx="12" stroke="#fbbf24" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#fbbf24" font-size="12" text-anchor="middle" x="700.0" y="69">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Deliver</text>
+</g>
+</svg>
+<svg aria-label="Organize → Explain → Verify → Deliver" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m4-3-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m4-3-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#fbbf24" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m4-3-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#fbbf24" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#fbbf24" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#fbbf24" font-size="12" text-anchor="middle" x="180.0" y="35">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Organize</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Explain</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Check</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m4-3-True-glow)" height="62" rx="12" stroke="#fbbf24" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#fbbf24" font-size="12" text-anchor="middle" x="180.0" y="305">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Deliver</text>
+</g>
+</svg>
+<figcaption>A delivery kit with instructions, a map, evidence, and next steps.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Module index" class="lesson-toc" data-inema-toc="">
+<strong>In this module</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Think about who receives</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Organize the material by function</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Write executable instructions</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Build a small knowledge base</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Do a publish review</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Practice: deliver to a second reader</a>
+</li>
+</ul>
+<div aria-label="Progress for this module" class="meter" data-inema-meter="modulo:4-3">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="4-3" data-inema-track="4" id="modulo-4-3">
+<section class="topic-section" data-inema-topic="modulo-4-3#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Think about who receives</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-3-t1-p1">A delivery needs to work for someone who hasn’t followed the project conversations. Explain the goal, what exists, how to run it, and how to recognize the expected outcome. Avoid relying on phrases like “just do it like before.”</p>
+<p data-inema-block="m4-3-t1-p2">Choose a small project, like the order center, and prepare your kit. The recipient should be able to locate the files and understand the limitations without reading an entire history. The README works as an entry point, not as a dump for all notes.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m4-3-t1-p3">Delivery quality determines the cost of continuity. A useful tool loses value when only its author knows how to start, test, or update it.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Test the README steps in a clean context.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Publish all files from the folder without checking.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Recipient</strong>
+<span>Who will use or maintain</span>
+</div>
+<div>
+<strong>Entry point</strong>
+<span>First guidance document</span>
+</div>
+<div>
+<strong>Autonomy</strong>
+<span>Be able to act without the history</span>
+</div>
+<div>
+<strong>Limitation</strong>
+<span>What still doesn’t work or hasn’t been covered</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-4-3#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Organize the material by function</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-3-t2-p1">Separate code, examples, documentation, and evidence. Use descriptive names and consistent paths. Private working documents, credentials, and materials that don’t belong in the distribution should be left out of the published set.</p>
+<p data-inema-block="m4-3-t2-p2">A folder of evidence can include test results and captures of important states. You don’t need to keep every temporary file. Choose what demonstrates behavior and explain how it was produced, so the check can be repeated.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m4-3-t2-p3">Organizing by function reduces search time and prevents mixing examples with real data. It also makes reviewing the set to publish simpler.</p>
+</div>
+<h3>A way to apply</h3>
+<ol class="timeline">
+<li>Organize files and write the entry point.</li>
+<li>Run the instructions with the provided examples.</li>
+<li>Review the distribution and deliver continuity context.</li>
+</ol>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Code</strong>
+<span>Project implementation</span>
+</div>
+<div>
+<strong>Example</strong>
+<span>Fictitious data to experiment with</span>
+</div>
+<div>
+<strong>Documentation</strong>
+<span>Explanation of use and maintenance</span>
+</div>
+<div>
+<strong>Evidence</strong>
+<span>Result of a verification</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-4-3#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Write executable instructions</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-3-t3-p1">List prerequisites, the start command, and a test action. Execute the instructions exactly in a clean folder or an equivalent context. If a step depends on something installed globally, record that dependency.</p>
+<p data-inema-block="m4-3-t3-p2">Avoid instructions that promise a nonexistent automation. If the task requires a manual decision, explain the criterion. The reader should know what to expect after each step and how to recognize a common error without having to guess.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m4-3-t3-p3">An instruction is only validated when it was followed. This test reveals missing files, hidden dependencies, and path names that work only on the writer’s computer.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Work example</span>
+<button class="copy js-only" data-copy="exemplo-4-3" type="button">Copy</button>
+</div>
+<pre id="exemplo-4-3">
+<code>projeto/
+  README.md
+  src/
+  exemplos/entrada.csv
+  docs/arquitetura.md
+  docs/decisoes.md
+  evidencias/verificacao.md
+  CHANGELOG.md
+
+# Before publishing:
+git status --short
+git diff --cached --stat</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Practical tip</strong>Test the README steps in a clean context. Record the result before changing another part of the process.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Prerequisite</strong>
+<span>What must exist before</span>
+</div>
+<div>
+<strong>Command</strong>
+<span>A concrete execution action</span>
+</div>
+<div>
+<strong>Result</strong>
+<span>What should appear</span>
+</div>
+<div>
+<strong>Diagnosis</strong>
+<span>How to recognize and handle a failure</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-4-3#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Build a small knowledge base</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-3-t4-p1">Choose the documents that explain the project and record subject, version, and location. An index of ten items is enough to start. The base can feed a dossier, but it needs to keep the link between answers and the document.</p>
+<p data-inema-block="m4-3-t4-p2">When a file changes, review the summaries that depend on it. A “living” base doesn’t mean generating content endlessly; it means having an update routine with an owner, frequency, and change criterion. Mark outdated materials instead of letting them compete with the current version.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m4-3-t4-p3">An organized base preserves decisions and reduces repeated questions. Update control prevents old answers from looking current just because they’re still easy to find.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Keep fictitious examples separate from private data.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Document a function that doesn’t exist yet.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Index</strong>
+<span>Map of documents</span>
+</div>
+<div>
+<strong>Dependency</strong>
+<span>Summary linked to a document</span>
+</div>
+<div>
+<strong>Update</strong>
+<span>Review when the base changes</span>
+</div>
+<div>
+<strong>Owner</strong>
+<span>Who oversees maintenance</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-4-3#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Do a publish review</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-3-t5-p1">Before versioning, check the exact set of files. An ignore prevents adding new unwanted files, but it doesn’t automatically remove files that were already tracked. Review the status and the content prepared for the commit.</p>
+<p data-inema-block="m4-3-t5-p2">After publishing, test the links and the files that should open. Record the delivered version and the next steps. The result of the publish is a reference point for maintenance, not the end of the need to verify future changes.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m4-3-t5-p3">The review prevents distributing private material or an incomplete version. Identifying the delivery makes it possible to connect documentation, code, and test results.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criteria for checking your submission</caption>
+<thead>
+<tr>
+<th scope="col">Criterion</th>
+<th scope="col">Expected evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Reproduction</th>
+<td>Another person can run the example.</td>
+</tr>
+<tr>
+<th scope="row">Coherence</th>
+<td>README, map, and code describe the same version.</td>
+</tr>
+<tr>
+<th scope="row">Continuity</th>
+<td>Limitations and the next step are identified.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Before moving forward</strong>Keep fictional examples separate from private data. If any criterion fails, describe the case and adjust that part.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Distribution</strong>
+<span>The set that will be shared</span>
+</div>
+<div>
+<strong>Tracked</strong>
+<span>A file already followed by Git</span>
+</div>
+<div>
+<strong>Version</strong>
+<span>Delivery identification</span>
+</div>
+<div>
+<strong>Publishing</strong>
+<span>Making the verified set available</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-4-3#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Practice: deliver to a second reader</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m4-3-t6-p1">Assemble the kit for the order center or another small project. Ask someone to follow the README, open the diagram, run the example, and find a known limitation. If you’re studying alone, repeat the steps in a new folder.</p>
+<p data-inema-block="m4-3-t6-p2">Record where you had doubts and adjust the smallest necessary part. At the end, write a continuity summary with current status, decisions, and the next task. The kit is complete when it allows using and continuing the project without depending on the conversation that created it.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m4-3-t6-p3">This practice closes the course by connecting implementation and maintenance. You move from an AI-produced response to a delivery that can be checked, shared, and improved.</p>
+</div>
+<div class="practice">
+<h3>Your exercise</h3>
+<p>Prepare a kit with README, an input example, expected output, a flow map, and a verification log. Check the files that will be shared.</p>
+<a class="button small" download="" href="../../materiais/pratica-4-3.md">Download practice sheet</a>
+</div>
+<details class="solution">
+<summary>Check the commented answer</summary>
+<pre>The README points to the other documents and includes tested steps. The input uses fictional data; the output lets you verify the rules. The map matches the implemented flow. The verification reports results and limitations, and the next step describes a single, clearly bounded improvement.</pre>
+</details>
+<div class="check" data-inema-check="modulo-4-3#q1">
+<h3>Check your understanding</h3>
+<p>Adding a folder to .gitignore removes files that are already tracked?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">Yes, it always removes them from history.</button>
+<button class="js-only" data-inema-check-option="1" type="button">No; you need to review what is already tracked and the set you plan to publish.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Yes, if the folder name has a slash.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>No; you need to review what is already tracked and the set you plan to publish. The ignore rule only guides including untracked files. It does not automatically delete content that is already versioned.</p>
+</noscript>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Second reader</strong>
+<span>A person without the context of the creation</span>
+</div>
+<div>
+<strong>Reproduction</strong>
+<span>Follow the instructions from scratch</span>
+</div>
+<div>
+<strong>Continuity</strong>
+<span>Clear state and next step</span>
+</div>
+<div>
+<strong>Conclusion</strong>
+<span>Demonstrated usage and documented limits</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>What stays from this module</h2>
+<p>A delivery kit with instructions, a map, evidence, and next steps.</p>
+<ul>
+<li>✓ Another person can run the example.</li>
+<li>✓ README, the map, and the code describe the same version.</li>
+<li>✓ Limits and the next step are identified.</li>
+</ul>
+<p class="public-notice">Progress records your reading. The practice is completed when you check the submission.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Back to the learning track</a>
+<a class="button primary" href="../../materiais/index.html">Gather my deliverables</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Student materials</a> · <a href="../../index.html">Course start</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-4-3#q1", "q": "Adding a folder to .gitignore removes files that are already tracked?", "options": ["Yes, it always removes them from history.", "No; you need to review what is already tracked and the set you plan to publish.", "Yes, if the folder name has a slash."], "answer": "1", "explain": {"0": "The ignore guides the inclusion of untracked files. It does not automatically delete content that has already been versioned.", "1": "The ignore guides the inclusion of untracked files. It does not automatically delete content that has already been versioned.", "2": "The ignore guides the inclusion of untracked files. It does not automatically delete content that has already been versioned."}}</script>
+<nav aria-label="Course language" data-course-languages=""><a href="../../../curso/trilha4/modulo-4-3.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-4-3.html" hreflang="en" lang="en">English</a><a href="../../../es/curso/trilha4/modulo-4-3.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

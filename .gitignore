@@ -24,3 +24,6 @@ test-results/
 !/scripts/gerar_curso.py
 !/scripts/verificar_curso.py
 /FALHAS.md
+
+# Gerador público offline das versões EN/ES.
+!/scripts/build_locales.py

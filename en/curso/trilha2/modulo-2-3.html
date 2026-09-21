@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-en" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Represent components and decisions without inventing connections the system doesn’t have." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Diagrams that truly explain | Pílulas de Ouro · INEMA</title>
+
+<meta content="Diagrams that truly explain" property="og:title"/>
+<meta content="Represent components and decisions without inventing connections the system doesn’t have." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-en", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentals", "modules": [{"id": "1-1", "title": "A request with a beginning and an end", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills with criteria", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "A second opinion that helps", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Knowledge", "modules": [{"id": "2-1", "title": "Documents the AI can read", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Evidence-based research", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagrams that truly explain", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Production", "modules": [{"id": "3-1", "title": "Interfaces that help you take action", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Images with a clear brief", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Templates and configurations without confusion", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Delivery", "modules": [{"id": "4-1", "title": "A website that’s easy to understand", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Project: request hub", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Project: delivery and knowledge kit", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/modulo-2-3.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha2/modulo-2-3.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha2/modulo-2-3.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/modulo-2-3.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha2/modulo-2-3.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-2">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Jump to content</a>
+<nav aria-label="Course navigation" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, start" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentals</span>
+</a>
+<a aria-current="page" class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Knowledge</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Production</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Delivery</span>
+</a>
+</div>
+<button aria-label="Toggle light and dark theme" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">My journey</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Appearance</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continue studying</button>
+<div aria-label="Reading preferences" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Theme</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Light</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Focus</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Text size</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Pattern</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Larger</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Big</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Reading width</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Narrow</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Medium</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Wide</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Line spacing</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compact</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Comfortable</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Font</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">System</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Accent</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Green</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Blue</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Purple</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Amber</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Course progress" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">The content is available for reading. Enable JavaScript to save progress and notes.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Start</a> / <a href="index.html">Knowledge</a> / Module 2.3</div>
+<header class="page-head">
+<p class="badge">MODULE 2.3</p>
+<h1>Diagrams that truly explain</h1>
+<p>Represent components and decisions without inventing connections the system doesn’t have.</p>
+<div class="page-stats">
+<div>
+<strong>6 topics</strong>
+<span>Concepts and application</span>
+</div>
+<div>
+<strong>~35 minutes</strong>
+<span>Estimated with practice</span>
+</div>
+<div>
+<strong>Hands-on</strong>
+<span>Step by step</span>
+</div>
+<div>
+<strong>Your delivery</strong>
+<span>An editable flow map accompanied by a simple explanation.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Question → Elements → Relationships → Map" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m2-3-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m2-3-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m2-3-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="100.0" y="69">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Question</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Elements</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Relationships</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m2-3-False-glow)" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="700.0" y="69">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Map</text>
+</g>
+</svg>
+<svg aria-label="Question → Elements → Relationships → Map" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m2-3-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m2-3-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m2-3-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="35">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Question</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Elements</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Relationships</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m2-3-True-glow)" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="305">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Map</text>
+</g>
+</svg>
+<figcaption>An editable flow map accompanied by a simple explanation.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Module index" class="lesson-toc" data-inema-toc="">
+<strong>In this module</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Choose the diagram question</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. List only confirmed elements</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Give meaning to the connections</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Keep an editable source</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Test another person’s understanding</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Practice: draw the incomplete request</a>
+</li>
+</ul>
+<div aria-label="Progress for this module" class="meter" data-inema-meter="modulo:2-3">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="2-3" data-inema-track="2" id="modulo-2-3">
+<section class="topic-section" data-inema-topic="modulo-2-3#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Choose the diagram question</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-3-t1-p1">A diagram must answer a question. Architecture shows parts and relationships; a sequence shows who does what over time; a flow highlights steps and decisions; a state machine describes allowed situations and transitions.</p>
+<p data-inema-block="m2-3-t1-p2">Don’t put all of these goals into a single diagram. To explain a service interaction, start with the request flow. To investigate a delay, a sequence between customer, application, and storage may be more appropriate. The choice determines what’s included and what’s left out.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-3-t1-p3">A beautiful diagram with a confusing purpose doesn’t help you decide. A clear question lets you assess whether the diagram explained the problem or merely reorganized words.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Show the error path.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Draw components just because they are common.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Architecture</strong>
+<span>Parts and links</span>
+</div>
+<div>
+<strong>Sequence</strong>
+<span>Interactions over time</span>
+</div>
+<div>
+<strong>Flow</strong>
+<span>Steps and decisions</span>
+</div>
+<div>
+<strong>State</strong>
+<span>A situation of an entity</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-3#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>List only confirmed elements</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-3-t2-p1">Before drawing, list participants, inputs, outputs, and the places where the data is stored. Link each element to a project evidence or to an identified hypothesis. If you don’t yet know where a file is saved, don’t draw a database out of habit.</p>
+<p data-inema-block="m2-3-t2-p2">Use names the audience recognizes. “Reception,” “order list,” and “check” can explain a business process better than internal function names. When a technical name is needed, also present its function in plain language.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-3-t2-p3">The list prevents the assistant from completing the architecture with plausible but nonexistent components. It also establishes vocabulary that you can review before changing the diagram.</p>
+</div>
+<h3>A way to apply</h3>
+<ol class="timeline">
+<li>Define the question and list the confirmed elements.</li>
+<li>Draw relationships using verbs and decisions.</li>
+<li>Go through two cases and adjust readability.</li>
+</ol>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Participant</strong>
+<span>Who or what acts</span>
+</div>
+<div>
+<strong>Persistence</strong>
+<span>Where data remains</span>
+</div>
+<div>
+<strong>Hypothesis</strong>
+<span>Element not yet confirmed</span>
+</div>
+<div>
+<strong>Vocabulary</strong>
+<span>Names shared by the audience</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-3#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Give meaning to connections</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-3-t3-p1">A line between boxes can mean sending, reading, dependency, or order. Label the connection when that isn’t obvious. Use the same convention across the diagram and include a short legend when there’s more than one type.</p>
+<p data-inema-block="m2-3-t3-p2">In the example, “validate” isn’t the same as “save.” The check can reject an order before it enters the list. Showing this decision prevents the reader from thinking that every entry is accepted. The error path deserves as much clarity as the happy path.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-3-t3-p3">Connections carry much of the meaning. Without labels and decisions, the reader may infer causality where there is only a query relationship.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Work example</span>
+<button class="copy js-only" data-copy="exemplo-2-3" type="button">Copy</button>
+</div>
+<pre id="exemplo-2-3">
+<code>flowchart TD
+  A[Receber pedido] --&gt; B{Tarefa e contato presentes?}
+  B -- Sim --&gt; C[Registrar na lista]
+  B -- Não --&gt; D[Pedir complemento]
+  D --&gt; A
+  C --&gt; E[Conferir entrega]
+  E --&gt; F[Concluir]</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Practical tip</strong>Show the error path. Record the result before changing another part of the process.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Connection</strong>
+<span>Relationship between elements</span>
+</div>
+<div>
+<strong>Label</strong>
+<span>Verb that explains the relationship</span>
+</div>
+<div>
+<strong>Decision</strong>
+<span>Condition that changes the path</span>
+</div>
+<div>
+<strong>Legend</strong>
+<span>Convention used in the diagram</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-3#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Keep an editable source</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-3-t4-p1">Save the diagram in a format that allows changes, in addition to the presentation image. A Mermaid description, an SVG, or the tool’s native file can serve as the maintenance base. A PNG alone is useful for showing, but it’s a hassle to fix.</p>
+<p data-inema-block="m2-3-t4-p2">Record the version of the process represented. If a step changes, check which connections no longer make sense. Don’t update only the box name: the change may require a new path, a validation, or an intermediate state.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-3-t4-p3">An editable source reduces the cost of keeping documentation aligned with the system. It also makes it possible to review the diagram as part of a code change.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Save the editable file alongside the image.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Use an arrow without knowing what it means.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Editable source</strong>
+<span>A representation that can be changed</span>
+</div>
+<div>
+<strong>Export</strong>
+<span>Image for reference</span>
+</div>
+<div>
+<strong>Version</strong>
+<span>Process that the diagram describes</span>
+</div>
+<div>
+<strong>Maintenance</strong>
+<span>Updating elements and relationships</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-3#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Test someone else’s understanding</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-3-t5-p1">Ask someone to walk through one normal case and another with an error using only the diagram. Notice where the person needs to guess. A small arrow, an abstract name, or a missing step often shows up during this reading.</p>
+<p data-inema-block="m2-3-t5-p2">Also do a visual check: readable text, sufficient contrast, and connections without unnecessary crossings. On small screens, prefer a simpler diagram over a huge image scaled down until labels become unreadable.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-3-t5-p3">The test measures the map’s communicative function. You check whether the reader understands order and conditions, instead of evaluating only aesthetics.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criteria for checking your submission</caption>
+<thead>
+<tr>
+<th scope="col">Criterion</th>
+<th scope="col">Expected evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Fidelity</th>
+<td>The diagram matches the prompt.</td>
+</tr>
+<tr>
+<th scope="row">Exception</th>
+<td>An incomplete request has an explicit path.</td>
+</tr>
+<tr>
+<th scope="row">Maintenance</th>
+<td>There is an editable representation.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Before moving forward</strong>Save the editable file alongside the image. If any criterion fails, describe the case and adjust that part.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Reader</strong>
+<span>Person who needs to use the map</span>
+</div>
+<div>
+<strong>Path</strong>
+<span>Case followed in the diagram</span>
+</div>
+<div>
+<strong>Readability</strong>
+<span>Recognizable text and relationships</span>
+</div>
+<div>
+<strong>Simplification</strong>
+<span>Remove detail without losing meaning</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-3#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Practice: draw the incomplete request</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-3-t6-p1">Represent a request that arrives at the workshop. If it has a task and contact, it goes into the list. If one of those pieces of data is missing, it goes back for completion. After the final check, it can be marked as completed.</p>
+<p data-inema-block="m2-3-t6-p2">Write the flow description, generate the diagram in the tool of your choice, and compare the paths to the prompt. Don’t add payment, artificial intelligence, or a database if those elements aren’t necessary to answer the exercise question.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-3-t6-p3">Practice teaches you to contain the diagram’s scope and represent exceptions. The result will be reused in the documentation of the final projects.</p>
+</div>
+<div class="practice">
+<h3>Your exercise</h3>
+<p>Create a flow for the order described in the topic. Identify the decision, the return, and the output. Explain how the diagram behaves when the contact is missing.</p>
+<a class="button small" download="" href="../../materiais/pratica-2-3.md">Download practice sheet</a>
+</div>
+<details class="solution">
+<summary>Check the commented answer</summary>
+<pre>Decision: are the task and contact present? If not, ask for completion and return to receiving. If yes, register, check the delivery, and conclude. Missing contact prevents moving on to registration, without deleting the received request. The image and its source must show the same path.</pre>
+</details>
+<div class="check" data-inema-check="modulo-2-3#q1">
+<h3>Check your understanding</h3>
+<p>You don’t know where the system stores data. How should you represent that?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">Add a popular database.</button>
+<button class="js-only" data-inema-check-option="1" type="button">Mark it as a hypothesis or leave persistence out until you confirm it.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Draw three databases to cover possibilities.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>Mark it as a hypothesis or leave persistence out until you confirm it. A reliable diagram distinguishes what was observed from what still needs to be discovered.</p>
+</noscript>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Input</strong>
+<span>Request received</span>
+</div>
+<div>
+<strong>Condition</strong>
+<span>Task and contact are present</span>
+</div>
+<div>
+<strong>Return</strong>
+<span>Request for completion</span>
+</div>
+<div>
+<strong>Output</strong>
+<span>Request registered and checked</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>What stays from this module</h2>
+<p>An editable flow map accompanied by a simple explanation.</p>
+<ul>
+<li>✓ The diagram matches the prompt.</li>
+<li>✓ The incomplete request has an explicit path.</li>
+<li>✓ There is an editable representation.</li>
+</ul>
+<p class="public-notice">Progress records your reading. The practice is completed when you check the submission.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Back to the learning track</a>
+<a class="button primary" href="../trilha3/modulo-3-1.html">Next module: Interfaces that help you act</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Student materials</a> · <a href="../../index.html">Course start</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-2-3#q1", "q": "You don’t know where the system stores data. How should you represent that?", "options": ["Add a popular database.", "Mark it as a hypothesis or leave persistence out until you confirm it.", "Draw three databases to cover possibilities."], "answer": "1", "explain": {"0": "A reliable diagram distinguishes what was observed from what still needs to be discovered.", "1": "A reliable diagram distinguishes what was observed from what still needs to be discovered.", "2": "A reliable diagram distinguishes what was observed from what still needs to be discovered."}}</script>
+<nav aria-label="Course language" data-course-languages=""><a href="../../../curso/trilha2/modulo-2-3.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-2-3.html" hreflang="en" lang="en">English</a><a href="../../../es/curso/trilha2/modulo-2-3.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

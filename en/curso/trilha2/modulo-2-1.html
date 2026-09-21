@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-en" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Convert files into structured text and check what survived the transformation." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Documents the AI can read | Pílulas de Ouro · INEMA</title>
+
+<meta content="Documents the AI can read" property="og:title"/>
+<meta content="Convert files into structured text and check what survived the transformation." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-en", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentals", "modules": [{"id": "1-1", "title": "A request with a beginning and an end", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills with criteria", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "A second opinion that helps", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Knowledge", "modules": [{"id": "2-1", "title": "Documents the AI can read", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Evidence-based research", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagrams that truly explain", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Production", "modules": [{"id": "3-1", "title": "Interfaces that help you take action", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Images with a clear brief", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Templates and configurations without confusion", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Delivery", "modules": [{"id": "4-1", "title": "A website that’s easy to understand", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Project: request hub", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Project: delivery and knowledge kit", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/modulo-2-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha2/modulo-2-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha2/modulo-2-1.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/modulo-2-1.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha2/modulo-2-1.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-2">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Jump to content</a>
+<nav aria-label="Course navigation" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, start" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentals</span>
+</a>
+<a aria-current="page" class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Knowledge</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Production</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Delivery</span>
+</a>
+</div>
+<button aria-label="Toggle light and dark theme" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">My journey</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Appearance</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continue studying</button>
+<div aria-label="Reading preferences" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Theme</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Light</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Focus</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Text size</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Pattern</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Larger</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Big</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Reading width</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Narrow</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Medium</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Wide</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Line spacing</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compact</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Comfortable</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Font</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">System</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Accent</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Green</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Blue</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Purple</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Amber</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Course progress" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">The content is available for reading. Enable JavaScript to save progress and notes.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Start</a> / <a href="index.html">Knowledge</a> / Module 2.1</div>
+<header class="page-head">
+<p class="badge">MODULE 2.1</p>
+<h1>Documents the AI can read</h1>
+<p>Convert files into structured text and check what survived the transformation.</p>
+<div class="page-stats">
+<div>
+<strong>6 topics</strong>
+<span>Concepts and application</span>
+</div>
+<div>
+<strong>~35 minutes</strong>
+<span>Estimated with practice</span>
+</div>
+<div>
+<strong>Hands-on</strong>
+<span>Step by step</span>
+</div>
+<div>
+<strong>Your submission</strong>
+<span>A Markdown document with source, checked tables, and conversion warnings.</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="File → Conversion → Structure → Validation" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="m2-1-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m2-1-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m2-1-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="100.0" y="69">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">File</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Conversion</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Structure</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m2-1-False-glow)" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="700.0" y="69">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Validation</text>
+</g>
+</svg>
+<svg aria-label="File → Conversion → Structure → Validation" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="m2-1-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="m2-1-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#m2-1-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="35">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">File</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Conversion</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Structure</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#m2-1-True-glow)" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="305">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Validation</text>
+</g>
+</svg>
+<figcaption>A Markdown document with source, checked tables, and conversion warnings.</figcaption>
+</figure>
+<div class="lesson-layout">
+<nav aria-label="Module index" class="lesson-toc" data-inema-toc="">
+<strong>In this module</strong>
+<ul>
+<li>
+<a class="inema-toc-link" href="#topico-1">1. Think about structure, not length</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-2">2. Choose a converter with a test</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-3">3. Use Markdown as an easy-to-read structure</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-4">4. Confirm numbers and tables</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-5">5. Save the source and the version</a>
+</li>
+<li>
+<a class="inema-toc-link" href="#topico-6">6. Practice: retrieve a small table</a>
+</li>
+</ul>
+<div aria-label="Progress for this module" class="meter" data-inema-meter="modulo:2-1">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</nav>
+<article class="lesson" data-inema-module="2-1" data-inema-track="2" id="modulo-2-1">
+<section class="topic-section" data-inema-topic="modulo-2-1#topico-1" id="topico-1">
+<div class="topic-heading">
+<span class="number large">1</span>
+<h2>Think about structure, not length</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-1-t1-p1">Changing a file’s extension to .md doesn’t convert it into Markdown. A converter needs to extract content and rebuild titles, paragraphs, lists, and tables. Quality depends both on the format and on how the document was produced.</p>
+<p data-inema-block="m2-1-t1-p2">A PDF may contain selectable text or only page images. In the second case, character recognition will be needed, called OCR. Before choosing the tool, open the document and try selecting a sentence. This simple check changes the workflow path.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-1-t1-p3">You avoid promising a conversion that the tool can’t do. Recognizing the input structure also allows you to choose specific checks for text, images, and tables.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Check headers, values, and notes.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Rename a PDF to .md.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Format</strong>
+<span>Technical organization of the file</span>
+</div>
+<div>
+<strong>Structure</strong>
+<span>Headings, lists, and relationships</span>
+</div>
+<div>
+<strong>OCR</strong>
+<span>Text recognition in an image</span>
+</div>
+<div>
+<strong>Extraction</strong>
+<span>Recovery of the content</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-1#topico-2" id="topico-2">
+<div class="topic-heading">
+<span class="number large">2</span>
+<h2>Choose a converter with a test</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-1-t2-p1">Ready-made conversion tools can save work, but they need to be evaluated with documents similar to yours. Split out a small sample: a title, a table, a note, and an accented character. Convert and compare those elements.</p>
+<p data-inema-block="m2-1-t2-p2">A skill can guide the use of a CLI like AnyDoc or another compatible converter. Check the exact project, the help for the installed version, and the accepted formats. Don’t infer command syntax from the commercial name. Record the command used so you can repeat the test.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-1-t2-p3">A general benchmark doesn’t tell you whether your specific table will be preserved. A test with a representative sample produces a decision appropriate to your case.</p>
+</div>
+<h3>A way to apply</h3>
+<ol class="timeline">
+<li>Identify whether there is selectable text or an image.</li>
+<li>Convert a sample and check the structure.</li>
+<li>Record output, version, and limitations.</li>
+</ol>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Sample</strong>
+<span>Small representative document</span>
+</div>
+<div>
+<strong>Compatibility</strong>
+<span>Format actually accepted</span>
+</div>
+<div>
+<strong>CLI</strong>
+<span>Execution interface</span>
+</div>
+<div>
+<strong>Reproducibility</strong>
+<span>Be able to redo the conversion</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-1#topico-3" id="topico-3">
+<div class="topic-heading">
+<span class="number large">3</span>
+<h2>Use Markdown as a readable structure</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-1-t3-p1">Markdown represents hierarchy with simple symbols. A main title uses a hash symbol; subtitles use two or three. Lists group items, and tables link values to columns. The goal is to make the text understandable for people and for tools.</p>
+<p data-inema-block="m2-1-t3-p2">Do not turn each visual line from the PDF into an independent paragraph. Page breaks, repeated headers, and stray numbers can clutter reading. Preserve the relationship between the title and the content, without deleting notes that change the meaning of a rule.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-1-t3-p3">Explicit structure helps locate information and reduces ambiguities. A number without its header can be misinterpreted even when it was extracted correctly.</p>
+</div>
+<div class="code-box">
+<div class="code-head">
+<span>Work example</span>
+<button class="copy js-only" data-copy="exemplo-2-1" type="button">Copy</button>
+</div>
+<pre id="exemplo-2-1">
+<code># Fictional catalog for Oficina Aurora
+
+Deadlines counted in business days.
+
+| Service | Deadline | Example value |
+|---|---:|---:|
+| Text review | 2 days | R$ 80,00 |
+| Catalog organization | 5 days | R$ 240,00 |
+
+Note: the deadline starts after the files are received.</code>
+</pre>
+</div>
+<aside class="tip">
+<strong>Practical tip</strong>Verify headers, values, and notes. Record the result before changing another part of the process.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Title</strong>
+<span>Indicates topic and hierarchy</span>
+</div>
+<div>
+<strong>List</strong>
+<span>Groups related items</span>
+</div>
+<div>
+<strong>Table</strong>
+<span>Relates a column and its value</span>
+</div>
+<div>
+<strong>Note</strong>
+<span>A condition that modifies interpretation</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-1#topico-4" id="topico-4">
+<div class="topic-heading">
+<span class="number large">4</span>
+<h2>Verify numbers and tables</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-1-t4-p1">Compare totals, units, and headers. A table can look well organized and still shift values into the neighboring column. The currency symbol, the decimal comma, and the unit of measure are part of the data.</p>
+<p data-inema-block="m2-1-t4-p2">If the table cannot be reconstructed with confidence, record that limitation alongside the relevant excerpt. It’s better to keep an explicit open issue than to produce a false structure. For spreadsheets, also check whether the result shows calculated values, formulas, or both; that changes the meaning of the output.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-1-t4-p3">Structure errors are subtle and can contaminate later analyses. Checking a few critical cells identifies problems that do not show up when counting characters or pages.</p>
+</div>
+<div class="comparison">
+<div class="do">
+<h3>✓ Do</h3>
+<p>Preserve the original and record the tool.</p>
+</div>
+<div class="avoid">
+<h3>✗ Avoid</h3>
+<p>Treat extracted text as automatically correct.</p>
+</div>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Header</strong>
+<span>Defines the meaning of the column</span>
+</div>
+<div>
+<strong>Unit</strong>
+<span>Scale associated with the value</span>
+</div>
+<div>
+<strong>Decimal</strong>
+<span>Separator that changes the number</span>
+</div>
+<div>
+<strong>Formula</strong>
+<span>A rule for calculation, not just a result</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-1#topico-5" id="topico-5">
+<div class="topic-heading">
+<span class="number large">5</span>
+<h2>Save the source and the version</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-1-t5-p1">Keep the original file in a separate folder and record the output name, the tool, the date, and any warnings. A hash is a fingerprint calculated from the bytes: it helps you notice if the file changed. It does not reveal the content and it does not replace a copy.</p>
+<p data-inema-block="m2-1-t5-p2">When the document is updated, convert it again and compare the relevant excerpts. Avoid overwriting a version used in a decision without recording the change. A small JSON or CSV manifest is already enough to track the relationships.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-1-t5-p3">Traceability makes it possible to answer where a piece of information came from. It also prevents repeatedly converting identical files or continuing to use an old version without noticing.</p>
+</div>
+<div class="table-wrap">
+<table>
+<caption>Criteria for checking your submission</caption>
+<thead>
+<tr>
+<th scope="col">Criterion</th>
+<th scope="col">Expected evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Structure</th>
+<td>Title, table, and note preserved.</td>
+</tr>
+<tr>
+<th scope="row">Values</th>
+<td>Correct units and decimal places.</td>
+</tr>
+<tr>
+<th scope="row">Tracking</th>
+<td>Input file identified in the manifest.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="tip">
+<strong>Before moving forward</strong>Preserve the original and record the tool. If any criterion fails, describe the case and adjust that part.</aside>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Source</strong>
+<span>File that started the output</span>
+</div>
+<div>
+<strong>Hash</strong>
+<span>Calculated identifier of the bytes</span>
+</div>
+<div>
+<strong>Version</strong>
+<span>State of a document</span>
+</div>
+<div>
+<strong>Manifest</strong>
+<span>Record of relationships and warnings</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="topic-section" data-inema-topic="modulo-2-1#topico-6" id="topico-6">
+<div class="topic-heading">
+<span class="number large">6</span>
+<h2>Practice: recover a small table</h2>
+</div>
+<div class="inema-prose">
+<p data-inema-block="m2-1-t6-p1">Use the exercise’s fictional data to produce a document with a title, an introduction, and a table. Simulate a faulty conversion by removing the header of a column. Explain what cannot be interpreted with confidence until you restore it.</p>
+<p data-inema-block="m2-1-t6-p2">After that, add a note that changes the deadline of an item. Check that the note appears alongside the content it refers to. The delivery should include the Markdown and a short list of the elements you verified.</p>
+</div>
+<div class="why">
+<h3>Why learn</h3>
+<p data-inema-block="m2-1-t6-p3">Practice teaches you to validate meaning, not just appearance. This skill will be necessary when documents feed research, customer support, or automatic reports.</p>
+</div>
+<div class="practice">
+<h3>Your exercise</h3>
+<p>Recreate the example catalog in Markdown. Temporarily remove the “Deadline” title and assess what happens to the values “2” and “5”. Restore the header and record three checks.</p>
+<a class="button small" download="" href="../../materiais/pratica-2-1.md">Download practice sheet</a>
+</div>
+<details class="solution">
+<summary>Check the commented answer</summary>
+<pre>Without the header and the unit, 2 and 5 could represent quantity, days, or another measurement. The correct output keeps “Deadline,” explicitly states business days, and preserves the start condition. Checks: two service lines, monetary values matching the input, and a note linked to the deadlines.</pre>
+</details>
+<div class="check" data-inema-check="modulo-2-1#q1">
+<h3>Check your understanding</h3>
+<p>A PDF displays pages as images. What feature might be needed?</p>
+<div class="check-options">
+<button class="js-only" data-inema-check-option="0" type="button">Just change the file name.</button>
+<button class="js-only" data-inema-check-option="1" type="button">OCR before checking the extracted text.</button>
+<button class="js-only" data-inema-check-option="2" type="button">Delete the images and keep the file empty.</button>
+</div>
+<div aria-live="polite" data-inema-check-feedback="" role="status">
+</div>
+<noscript>
+<p>OCR before checking the extracted text. OCR recovers characters from images, but the result still needs to be verified.</p>
+</noscript>
+</div>
+<h3>Key concepts</h3>
+<div class="concepts">
+<div>
+<strong>Semantics</strong>
+<span>Meaning of the organization</span>
+</div>
+<div>
+<strong>Verification</strong>
+<span>Compare with the input</span>
+</div>
+<div>
+<strong>Warning</strong>
+<span>Limitation visible in the output</span>
+</div>
+<div>
+<strong>Delivery</strong>
+<span>Text accompanied by validation</span>
+</div>
+</div>
+<div class="read-controls js-only justify-start">
+<button aria-pressed="false" data-inema-read-toggle="" type="button">
+<span aria-hidden="true" class="inema-read-icon">○</span>
+<span class="inema-read-label">Mark as read</span>
+</button>
+<button aria-pressed="false" data-inema-doubt-toggle="" type="button">I have a question</button>
+</div>
+</section>
+<section class="module-outcome">
+<h2>What stays from this module</h2>
+<p>A Markdown document with source, checked tables, and conversion warnings.</p>
+<ul>
+<li>✓ Title, table, and note preserved.</li>
+<li>✓ Correct units and decimal places.</li>
+<li>✓ Input file identified in the manifest.</li>
+</ul>
+<p class="public-notice">Progress records your reading. The practice is completed when you check the submission.</p>
+<div class="actions justify-start">
+<a class="button" href="index.html">Back to the learning track</a>
+<a class="button primary" href="../trilha2/modulo-2-2.html">Next module: Research with evidence</a>
+</div>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Student materials</a> · <a href="../../index.html">Course start</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<script data-quiz-definition="" type="application/json">{"id": "modulo-2-1#q1", "q": "A PDF displays pages as images. What feature might be needed?", "options": ["Just change the file name.", "OCR before checking the extracted text.", "Delete the images and keep the file empty."], "answer": "1", "explain": {"0": "OCR recovers characters from images, but the result still needs to be checked.", "1": "OCR recovers characters from images, but the result still needs to be checked.", "2": "OCR recovers characters from images, but the result still needs to be checked."}}</script>
+<nav aria-label="Course language" data-course-languages=""><a href="../../../curso/trilha2/modulo-2-1.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="modulo-2-1.html" hreflang="en" lang="en">English</a><a href="../../../es/curso/trilha2/modulo-2-1.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

@@ -1,6 +1,6 @@
 # Pílulas de Ouro — IA em projetos práticos
 
-INEMA · versão 1.0.0
+INEMA · versão 1.1.0
 
 ## 1.1 · Um pedido com começo e fim
 

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-es" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Convierta documentos en conocimiento organizado, con evidencias y mapas legibles." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Conocimiento | Pílulas de Ouro · INEMA</title>
+
+<meta content="Conocimiento" property="og:title"/>
+<meta content="Convierta documentos en conocimiento organizado, con evidencias y mapas legibles." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-es", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Una solicitud con principio y fin", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills con criterio", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "Una segunda opinión que ayuda", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Conocimiento", "modules": [{"id": "2-1", "title": "Documentos que la IA puede leer", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Investigación con evidencias", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagramas que explican de verdad", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Producción", "modules": [{"id": "3-1", "title": "Interfaces que ayudan a actuar", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Imágenes con un briefing claro", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Plantillas y configuraciones sin confusión", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Entrega", "modules": [{"id": "4-1", "title": "Un sitio fácil de entender", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Proyecto: central de pedidos", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Proyecto: kit de entrega y conocimiento", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha2/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha2/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha2/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha2/index.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-2">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Saltar al contenido</a>
+<nav aria-label="Navegación del curso" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, inicio" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentos</span>
+</a>
+<a aria-current="page" class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Conocimiento</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Producción</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Entrega</span>
+</a>
+</div>
+<button aria-label="Alternar tema claro y oscuro" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">Mi recorrido</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Apariencia</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continuar estudio</button>
+<div aria-label="Preferencias de lectura" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Tema</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Oscuro</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Claro</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Enfoque</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">Alto contraste</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Tamaño del texto</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Patrón</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Mayor</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Grande</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Ancho de lectura</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Estrecha</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Media</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Amplia</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Interlineado</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compacta</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Cómoda</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Fuente</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">Sistema</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Acento</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Verde</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Azul</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Morado</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Ámbar</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Progreso del curso" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">El contenido está disponible para lectura. Activa JavaScript para guardar progreso y anotaciones.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Inicio</a> / Ruta 2</div>
+<header class="page-head">
+<p class="badge">RUTA 2</p>
+<h1>📚 Conocimiento</h1>
+<p>Convierta documentos en conocimiento organizado, con evidencias y mapas legibles.</p>
+<div class="page-stats">
+<div>
+<strong>3 módulos</strong>
+<span>Un paso a la vez</span>
+</div>
+<div>
+<strong>18 temas</strong>
+<span>Lectura con anotaciones</span>
+</div>
+<div>
+<strong>~1h45</strong>
+<span>Estimación con prácticas</span>
+</div>
+<div>
+<strong>Aplicación práctica</strong>
+<span>Ejemplos comentados</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Entender → Aplicar → Verificar → Entregar" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="t2-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="t2-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#t2-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="100.0" y="69">ETAPA 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Entender</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">ETAPA 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Aplicar</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">ETAPA 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Comprobar</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#t2-False-glow)" height="76" rx="12" stroke="#60a5fa" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="700.0" y="69">ETAPA 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Entregar</text>
+</g>
+</svg>
+<svg aria-label="Entender → Aplicar → Verificar → Entregar" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="t2-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="t2-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#60a5fa" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#t2-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#60a5fa" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="35">ETAPA 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Entender</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">ETAPA 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Aplicar</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">ETAPA 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Comprobar</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#t2-True-glow)" height="62" rx="12" stroke="#60a5fa" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#60a5fa" font-size="12" text-anchor="middle" x="180.0" y="305">ETAPA 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Entregar</text>
+</g>
+</svg>
+<figcaption>Información que usted puede comprobar.</figcaption>
+</figure>
+<h2>Mapa de la trilha</h2>
+<div class="map-grid">
+<a class="map-card" href="#modulo-2-1">
+<div class="map-meta">
+<span>2.1</span>
+<span>~35 min</span>
+</div>
+<h3>📚 Documentos que la IA puede leer</h3>
+<p>Una salida que tiene sentido.</p>
+</a>
+<a class="map-card" href="#modulo-2-2">
+<div class="map-meta">
+<span>2.2</span>
+<span>~35 min</span>
+</div>
+<h3>📚 Investigación con evidencias</h3>
+<p>Menos suposiciones. Más evidencia.</p>
+</a>
+<a class="map-card" href="#modulo-2-3">
+<div class="map-meta">
+<span>2.3</span>
+<span>~35 min</span>
+</div>
+<h3>📚 Diagramas que explican de verdad</h3>
+<p>Practica y cierra la etapa.</p>
+</a>
+</div>
+<h2 class="text-2xl font-bold">Contenido detallado</h2>
+<article class="module-card" data-inema-module="2-1" data-inema-track="2" id="modulo-2-1">
+<div class="module-card-head">
+<div class="map-meta">
+<span>Módulo 2.1</span>
+<span>~35 min con práctica</span>
+</div>
+<h3 class="text-2xl font-bold">Documentos que la IA puede leer</h3>
+<p>Convierta archivos en texto estructurado y compruebe lo que sobrevivió a la transformación.</p>
+<div aria-label="Progreso del módulo 2.1" class="meter" data-inema-meter="modulo:2-1">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-1-resumo-1" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">1</span>
+<span>Piense en la estructura, no en la extensión</span>
+</button>
+<div class="topic-explanation" id="2-1-resumo-1">
+<p>
+<strong>¿Qué es</strong>
+<br/>Cambiar la extensión de un archivo a .md no lo convierte en Markdown.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>Evita prometer una conversión que la herramienta no puede hacer. Reconocer también la estructura de entrada le permite elegir verificaciones específicas para texto, imágenes y tablas.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Formato · Estructura · OCR · Extracción</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-1-resumo-2" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">2</span>
+<span>Elija un conversor con una prueba</span>
+</button>
+<div class="topic-explanation" id="2-1-resumo-2">
+<p>
+<strong>¿Qué es</strong>
+<br/>Las herramientas de conversión listas pueden ahorrar trabajo, pero deben evaluarse con documentos parecidos a los suyos.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>Un benchmark general no informa si su tabla específica se conservará. La prueba con una muestra representativa produce una decisión adecuada para su caso.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Muestra · Compatibilidad · CLI · Repetibilidad</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-1-resumo-3" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">3</span>
+<span>Use Markdown como estructura legible</span>
+</button>
+<div class="topic-explanation" id="2-1-resumo-3">
+<p>
+<strong>¿Qué es</strong>
+<br/>Markdown representa jerarquía con símbolos simples.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>La estructura explícita ayuda a ubicar información y reduce ambigüedades. Un número sin su encabezado puede interpretarse mal incluso cuando se extrajo correctamente.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Título · Lista · Tabla · Nota</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-1-resumo-4" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">4</span>
+<span>Verifique números y tablas</span>
+</button>
+<div class="topic-explanation" id="2-1-resumo-4">
+<p>
+<strong>¿Qué es</strong>
+<br/>Compare totales, unidades y encabezados.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>Los errores de estructura son discretos y pueden contaminar análisis posteriores. La verificación de algunas celdas críticas identifica problemas que no aparecen al contar caracteres o páginas.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Encabezado · Unidad · Decimal · Fórmula</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-1-resumo-5" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">5</span>
+<span>Guarde el origen y la versión</span>
+</button>
+<div class="topic-explanation" id="2-1-resumo-5">
+<p>
+<strong>¿Qué es</strong>
+<br/>Mantenga el archivo original en una carpeta separada y registre el nombre de salida, la herramienta, la fecha y las alertas.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>La trazabilidad permite responder de dónde provino una información. También evita convertir repetidamente archivos idénticos o seguir usando una versión antigua sin darse cuenta.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Origen · Hash · Versión · Manifiesto</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-1-resumo-6" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">6</span>
+<span>Práctica: recupere una tabla pequeña</span>
+</button>
+<div class="topic-explanation" id="2-1-resumo-6">
+<p>
+<strong>¿Qué es</strong>
+<br/>Use los datos ficticios del ejercicio para producir un documento con título, introducción y tabla.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>La práctica enseña a validar significado, no solo apariencia. Esta habilidad será necesaria cuando los documentos alimenten investigación, atención o reportes automáticos.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Semántica · Verificación · Alerta · Entrega</p>
+</div>
+</div>
+<div class="actions justify-start">
+<a class="button primary" href="modulo-2-1.html">Ver completo</a>
+<button class="button js-only" onclick="openModal('modulo-2-1.html', 'Módulo 2.1')">Ver en modalidad</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
+<div class="module-card-head">
+<div class="map-meta">
+<span>Módulo 2.2</span>
+<span>~35 min con práctica</span>
+</div>
+<h3 class="text-2xl font-bold">Investigación con evidencias</h3>
+<p>Construya un dossier que separa lo que los documentos dicen de lo que usted está concluyendo.</p>
+<div aria-label="Progreso del módulo 2.2" class="meter" data-inema-meter="modulo:2-2">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-2-resumo-1" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">1</span>
+<span>Empiece por una pregunta que se pueda responder</span>
+</button>
+<div class="topic-explanation" id="2-2-resumo-1">
+<p>
+<strong>¿Qué es</strong>
+<br/>Una investigación útil nace de una decisión.</p>
+<p>
+<strong>Por qué aprender</strong>
+<br/>Una pregunta delimitada permite reconocer cuándo terminó la investigación. También hace visibles las brechas que requieren nuevo material en lugar de más generación de texto.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Pregunta · Decisión · Recorte · Laguna</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-2-resumo-2" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">2</span>
+<span>Arma un conjunto documental coherente</span>
+</button>
+<div class="topic-explanation" id="2-2-resumo-2">
+<p>
+<strong>¿Qué es</strong>
+<br/>Organiza los documentos por tema, fecha y responsable.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>La calidad de la respuesta depende del material consultado. Una herramienta sofisticada no resuelve automáticamente documentos contradictorios, incompletos o fuera de contexto.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Conjunto · Vigencia · Conflicto · Procedencia</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-2-resumo-3" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">3</span>
+<span>Exige ubicación para las afirmaciones</span>
+</button>
+<div class="topic-explanation" id="2-2-resumo-3">
+<p>
+<strong>¿Qué es</strong>
+<br/>Pide que cada conclusión central venga acompañada de una ubicación: documento, sección o fragmento identificable.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>La trazabilidad reduce la probabilidad de que una respuesta fluida oculte una afirmación sin respaldo. Permite que otra persona verifique el análisis sin tener que repetir toda la investigación.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Afirmación · Ubicación · Paráfrasis · Inferencia</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-2-resumo-4" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">4</span>
+<span>Trata las divergencias como información</span>
+</button>
+<div class="topic-explanation" id="2-2-resumo-4">
+<p>
+<strong>¿Qué es</strong>
+<br/>Cuando dos documentos difieren, no hagas un promedio ni elijas en silencio el valor más conveniente.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>Los conflictos ayudan a descubrir que una regla depende de condiciones. Reconocer esas condiciones produce mejores respuestas que intentar eliminar toda incertidumbre del informe.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Divergencia · Excepción · Vigencia · Incertidumbre</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-2-resumo-5" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">5</span>
+<span>Elige la salida según la tarea</span>
+</button>
+<div class="topic-explanation" id="2-2-resumo-5">
+<p>
+<strong>¿Qué es</strong>
+<br/>Un informe sirve para profundizar; una presentación ayuda a llevar a cabo una conversación; un cuestionario verifica la comprensión.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>El cambio de formato puede alterar el sentido por simplificación excesiva. Una base común permite reutilizar el conocimiento sin reinventar los hechos en cada entrega.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Formato · Público · Síntesis · Consistencia</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-2-resumo-6" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">6</span>
+<span>Práctica: responde sin completar lagunas</span>
+</button>
+<div class="topic-explanation" id="2-2-resumo-6">
+<p>
+<strong>¿Qué es</strong>
+<br/>Usa los dos documentos ficticios del ejercicio y escribe una respuesta corta.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>La práctica muestra cómo producir una respuesta útil incluso cuando la base no resuelve todo. El dossier puede orientar la siguiente pregunta en vez de fingir que se terminó el tema.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Regla · Excepción · Siguiente pregunta · Dossier</p>
+</div>
+</div>
+<div class="actions justify-start">
+<a class="button primary" href="modulo-2-2.html">Ver completo</a>
+<button class="button js-only" onclick="openModal('modulo-2-2.html', 'Módulo 2.2')">Ver en modalidad</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="2-3" data-inema-track="2" id="modulo-2-3">
+<div class="module-card-head">
+<div class="map-meta">
+<span>Módulo 2.3</span>
+<span>~35 min con práctica</span>
+</div>
+<h3 class="text-2xl font-bold">Diagramas que explican de verdad</h3>
+<p>Representa componentes y decisiones sin inventar conexiones que el sistema no tiene.</p>
+<div aria-label="Progreso del módulo 2.3" class="meter" data-inema-meter="modulo:2-3">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 de 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-3-resumo-1" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">1</span>
+<span>Elige la pregunta del diagrama</span>
+</button>
+<div class="topic-explanation" id="2-3-resumo-1">
+<p>
+<strong>¿Qué es</strong>
+<br/>Un diagrama necesita responder a una pregunta.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>Un diagrama bonito con un objetivo confuso no ayuda a decidir. Una pregunta clara permite evaluar si el diagrama explicó el problema o solo reorganizó palabras.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Arquitectura · Secuencia · Flujo · Estado</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-3-resumo-2" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">2</span>
+<span>Lista solo elementos confirmados</span>
+</button>
+<div class="topic-explanation" id="2-3-resumo-2">
+<p>
+<strong>¿Qué es</strong>
+<br/>Antes de dibujar, lista participantes, entradas, salidas y los lugares donde se guardan los datos.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>La lista evita que el asistente complete la arquitectura con componentes plausibles, pero inexistentes. También establece un vocabulario que puede revisarse antes de tocar el diagrama.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Participante · Persistencia · Hipótesis · Vocabulario</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-3-resumo-3" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">3</span>
+<span>Dale sentido a las conexiones</span>
+</button>
+<div class="topic-explanation" id="2-3-resumo-3">
+<p>
+<strong>¿Qué es</strong>
+<br/>Una línea entre cajas puede significar envío, lectura, dependencia u orden.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>Las conexiones cargan gran parte del significado. Sin etiquetas y decisiones, el lector puede interpretar causalidad donde solo existe una relación de consulta.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Conexión · Etiqueta · Decisión · Leyenda</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-3-resumo-4" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">4</span>
+<span>Mantén una fuente editable</span>
+</button>
+<div class="topic-explanation" id="2-3-resumo-4">
+<p>
+<strong>¿Qué es</strong>
+<br/>Guarda el diagrama en un formato que permita cambios, además de la imagen de presentación.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>La fuente editable reduce el costo de mantener la documentación alineada con el sistema. También hace posible revisar el diagrama como parte de un cambio de código.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Fuente editable · Exportación · Versión · Mantenimiento</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-3-resumo-5" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">5</span>
+<span>Prueba la comprensión de otra persona</span>
+</button>
+<div class="topic-explanation" id="2-3-resumo-5">
+<p>
+<strong>¿Qué es</strong>
+<br/>Pídele a alguien que recorra un caso normal y otro con error usando solo el diagrama.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>El test mide la función comunicativa del mapa. Verificas si el lector entiende el orden y las condiciones, en vez de evaluar solo la estética.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Lector · Recorrido · Legibilidad · Simplificación</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="2-3-resumo-6" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">6</span>
+<span>Práctica: dibuja el pedido incompleto</span>
+</button>
+<div class="topic-explanation" id="2-3-resumo-6">
+<p>
+<strong>¿Qué es</strong>
+<br/>Representa un pedido que llega al taller.</p>
+<p>
+<strong>¿Por qué aprender</strong>
+<br/>La práctica enseña a acotar el alcance del diagrama y a representar excepciones. El resultado se reutilizará en la documentación de los proyectos finales.</p>
+<p>
+<strong>Conceptos clave</strong>
+<br/>Entrada · Condición · Retorno · Salida</p>
+</div>
+</div>
+<div class="actions justify-start">
+<a class="button primary" href="modulo-2-3.html">Ver completo</a>
+<button class="button js-only" onclick="openModal('modulo-2-3.html', 'Módulo 2.3')">Ver en modalidad</button>
+</div>
+</article>
+<dialog aria-labelledby="preview-title" class="preview" id="module-preview">
+<div class="preview-bar">
+<strong id="preview-title">Vista previa del módulo</strong>
+<button class="button small" onclick="closeModal()">Cerrar vista previa</button>
+</div>
+<iframe title="Vista previa del módulo">
+</iframe>
+</dialog>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Materiales del alumno</a> · <a href="../../index.html">Inicio del curso</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<nav aria-label="Idioma del curso" data-course-languages=""><a href="../../../curso/trilha2/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../en/curso/trilha2/index.html" hreflang="en" lang="en">English</a><a aria-current="page" href="index.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>

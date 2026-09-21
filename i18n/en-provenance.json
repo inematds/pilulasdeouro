@@ -1,0 +1,7 @@
+{
+  "signature": "82b4b7daa4138e96828cd54a0de907a5f993952499d5fe4dedbf51191b34c544",
+  "model": "openai/gpt-5.4-nano",
+  "source_version": "course-i18n-1.0.0",
+  "prompt_sha256": "891f8c2b715056b86559707ed9def326fb2f11b65e2da8c1193f7b1e68c57ea9",
+  "context": "pilulasdeouro"
+}

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>(function(){try{var p=JSON.parse(localStorage.getItem('inema.prefs')||'{}'),d=document.documentElement;d.classList.toggle('dark',p.theme?p.theme!=='claro'&&p.theme!=='sepia':localStorage.getItem('theme')!=='light');if(['sepia','foco','contraste'].includes(p.theme))d.dataset.theme=p.theme;if(p.fontScale)d.style.fontSize=p.fontScale+'%';if(p.font)d.dataset.font=p.font;if(p.lineWidth)d.dataset.lineWidth=p.lineWidth;if(p.leading)d.dataset.leading=p.leading<=1.5?'compacto':'confortavel';if(p.accent)d.dataset.accent=p.accent}catch(e){document.documentElement.classList.add('dark')}})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="pilulasdeouro-en" name="inema-course"/>
+<meta content="../../" name="inema-root"/>
+<meta content="Define the scope, choose extensions with care, and learn to review what the AI produces." name="description"/>
+<meta content="#111827" name="theme-color"/>
+<title>Fundamentals | Pílulas de Ouro · INEMA</title>
+
+<meta content="Fundamentals" property="og:title"/>
+<meta content="Define the scope, choose extensions with care, and learn to review what the AI produces." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../assets/fonts.css" rel="stylesheet"/>
+<link href="../../assets/learn.css" rel="stylesheet"/>
+<link href="../../assets/site.css" rel="stylesheet"/>
+<script data-inema-manifest="" type="application/json">{"course": {"id": "pilulasdeouro-en", "title": "Pílulas de Ouro"}, "tracks": [{"n": 1, "title": "Fundamentals", "modules": [{"id": "1-1", "title": "A request with a beginning and an end", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Skills with criteria", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}, {"id": "1-3", "title": "A second opinion that helps", "topics": 6, "href": "curso/trilha1/modulo-1-3.html"}]}, {"n": 2, "title": "Knowledge", "modules": [{"id": "2-1", "title": "Documents the AI can read", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Evidence-based research", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}, {"id": "2-3", "title": "Diagrams that truly explain", "topics": 6, "href": "curso/trilha2/modulo-2-3.html"}]}, {"n": 3, "title": "Production", "modules": [{"id": "3-1", "title": "Interfaces that help you take action", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Images with a clear brief", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}, {"id": "3-3", "title": "Templates and configurations without confusion", "topics": 6, "href": "curso/trilha3/modulo-3-3.html"}]}, {"n": 4, "title": "Delivery", "modules": [{"id": "4-1", "title": "A website that’s easy to understand", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Project: request hub", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}, {"id": "4-3", "title": "Project: delivery and knowledge kit", "topics": 6, "href": "curso/trilha4/modulo-4-3.html"}]}]}</script>
+<link href="https://inematds.github.io/pilulasdeouro/curso/trilha1/index.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha1/index.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/es/curso/trilha1/index.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/curso/trilha1/index.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/pilulasdeouro/en/curso/trilha1/index.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<body class="track-1">
+<!-- THESIS: Aprender uma técnica e sair com uma entrega verificável.
+OWN-WORLD: INEMA v2 escolhido pelo usuário; escuro âmbar, trilhas emerald/blue/purple/amber, Inter, diagramas geométricos e superfícies de leitura.
+STORY: escolher uma trilha, ler um módulo, praticar, conferir e retomar o estudo.
+FIRST VIEWPORT: navegação completa, ferramentas de aprendizagem e título com orientação de uso; landing com mapa conceitual ao lado.
+FORM: estrutura de curso e leitura fixada pelo formato v2; sem sorteio de linguagem visual.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+<a class="skip" href="#conteudo">Jump to content</a>
+<nav aria-label="Course navigation" class="site-nav">
+<div class="wrap nav-inner">
+<div class="brand-group">
+<a aria-label="Pílulas de Ouro, start" class="brand" href="../../index.html">
+<svg aria-hidden="true" viewbox="0 0 32 32">
+<path d="M16 2 29 10v12L16 30 3 22V10Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="m10 12 6-4 6 4v8l-6 4-6-4Z" fill="currentColor"></path>
+</svg>
+<span class="brand-name">Pílulas de Ouro</span>
+</a>
+<span aria-hidden="true" class="muted">|</span>
+<a class="club text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
+</div>
+<div class="nav-links">
+<a aria-current="page" class="track-1" href="../../curso/trilha1/index.html">
+<span class="long">1. Fundamentals</span>
+</a>
+<a class="track-2" href="../../curso/trilha2/index.html">
+<span class="long">2. Knowledge</span>
+</a>
+<a class="track-3" href="../../curso/trilha3/index.html">
+<span class="long">3. Production</span>
+</a>
+<a class="track-4" href="../../curso/trilha4/index.html">
+<span class="long">4. Delivery</span>
+</a>
+</div>
+<button aria-label="Toggle light and dark theme" class="theme-toggle js-only" id="theme-toggle">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4"></circle>
+<path d="M12 2v3m0 14v3M2 12h3m14 0h3M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2"></path>
+</svg>
+</button>
+</div>
+</nav>
+<div class="wrap toolbar js-only">
+<div class="tools">
+<button data-inema-journey-open="" type="button">My journey</button>
+<button aria-controls="appearance" aria-expanded="false" data-inema-appearance-toggle="#appearance" type="button">Appearance</button>
+<button data-continue="../../curso/trilha1/modulo-1-1.html" type="button">Continue studying</button>
+<div aria-label="Reading preferences" class="appearance" data-inema-appearance="" data-open="false" id="appearance" role="region">
+<div class="pref-group">
+<p>Theme</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-theme="inema-dark" type="button">Dark</button>
+<button aria-pressed="false" data-inema-set-theme="claro" type="button">Light</button>
+<button aria-pressed="false" data-inema-set-theme="sepia" type="button">Sepia</button>
+<button aria-pressed="false" data-inema-set-theme="foco" type="button">Focus</button>
+<button aria-pressed="false" data-inema-set-theme="contraste" type="button">High contrast</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Text size</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-fontscale="100" type="button">Pattern</button>
+<button aria-pressed="false" data-inema-set-fontscale="112" type="button">Larger</button>
+<button aria-pressed="false" data-inema-set-fontscale="125" type="button">Big</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Reading width</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-linewidth="60" type="button">Narrow</button>
+<button aria-pressed="false" data-inema-set-linewidth="68" type="button">Medium</button>
+<button aria-pressed="false" data-inema-set-linewidth="75" type="button">Wide</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Line spacing</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-leading="1.45" type="button">Compact</button>
+<button aria-pressed="false" data-inema-set-leading="1.7" type="button">Comfortable</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Font</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-font="inter" type="button">Inter</button>
+<button aria-pressed="false" data-inema-set-font="system" type="button">System</button>
+</div>
+</div>
+<div class="pref-group">
+<p>Accent</p>
+<div class="pref-options">
+<button aria-pressed="false" data-inema-set-accent="emerald" type="button">Green</button>
+<button aria-pressed="false" data-inema-set-accent="blue" type="button">Blue</button>
+<button aria-pressed="false" data-inema-set-accent="purple" type="button">Purple</button>
+<button aria-pressed="false" data-inema-set-accent="amber" type="button">Amber</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-label="Course progress" class="meter" data-inema-meter="curso">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<p class="noscript-note">The content is available for reading. Enable JavaScript to save progress and notes.</p>
+</noscript>
+<main class="wrap" id="conteudo">
+<div class="breadcrumb">
+<a href="../../index.html">Start</a> / Track 1</div>
+<header class="page-head">
+<p class="badge">TRACK 1</p>
+<h1>🎯 Fundamentals</h1>
+<p>Define the scope, choose extensions with care, and learn to review what the AI produces.</p>
+<div class="page-stats">
+<div>
+<strong>3 modules</strong>
+<span>One step at a time</span>
+</div>
+<div>
+<strong>18 topics</strong>
+<span>Reading with notes</span>
+</div>
+<div>
+<strong>~1h45</strong>
+<span>Estimated with practice</span>
+</div>
+<div>
+<strong>Practical application</strong>
+<span>Commented examples</span>
+</div>
+</div>
+</header>
+<figure class="diagram">
+<svg aria-label="Understand → Apply → Verify → Deliver" class="w-full h-auto desktop-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 800 180">
+<defs>
+<filter id="t1-False-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="t1-False-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#34d399" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#t1-False-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#34d399" stroke-width="1.8">
+<path d="M188,84.0 h24"></path>
+<path d="M388,84.0 h24"></path>
+<path d="M588,84.0 h24"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="76" rx="12" stroke="#34d399" stroke-width="2" width="176" x="12" y="46"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="100.0" y="69">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="100.0" y="93">Understand</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="212" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="300.0" y="69">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="300.0" y="93">Apply</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="76" rx="12" stroke="#38bdf8" stroke-width="2" width="176" x="412" y="46"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="500.0" y="69">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="500.0" y="93">Check</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#t1-False-glow)" height="76" rx="12" stroke="#34d399" stroke-width="2" width="176" x="612" y="46"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="700.0" y="69">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="700.0" y="93">Deliver</text>
+</g>
+</svg>
+<svg aria-label="Understand → Apply → Verify → Deliver" class="w-full h-auto mobile-diagram" font-family="Inter,sans-serif" role="img" viewbox="0 0 360 370">
+<defs>
+<filter id="t1-True-glow">
+<fegaussianblur result="b" stddeviation="1.8"></fegaussianblur>
+<femerge>
+<femergenode in="b"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+<pattern height="24" id="t1-True-grid" patternunits="userSpaceOnUse" width="24">
+<circle cx="2" cy="2" fill="#34d399" opacity=".13" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#t1-True-grid)" height="100%" width="100%"></rect>
+<g opacity=".6" stroke="#34d399" stroke-width="1.8">
+<path d="M180.0,74 v28"></path>
+<path d="M180.0,164 v28"></path>
+<path d="M180.0,254 v28"></path>
+</g>
+<g>
+<rect fill="#171d2a" height="62" rx="12" stroke="#34d399" stroke-width="2" width="250" x="55" y="12"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="180.0" y="35">STEP 1</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="59">Understand</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="102"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="125">STEP 2</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="149">Apply</text>
+</g>
+<g>
+<rect fill="#0e1b26" height="62" rx="12" stroke="#38bdf8" stroke-width="2" width="250" x="55" y="192"></rect>
+<text fill="#38bdf8" font-size="12" text-anchor="middle" x="180.0" y="215">STEP 3</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="239">Check</text>
+</g>
+<g>
+<rect fill="#171d2a" filter="url(#t1-True-glow)" height="62" rx="12" stroke="#34d399" stroke-width="2" width="250" x="55" y="282"></rect>
+<text fill="#34d399" font-size="12" text-anchor="middle" x="180.0" y="305">STEP 4</text>
+<text fill="#e5e7eb" font-size="17" font-weight="600" text-anchor="middle" x="180.0" y="329">Deliver</text>
+</g>
+</svg>
+<figcaption>Start small. Finish for real.</figcaption>
+</figure>
+<h2>Track map</h2>
+<div class="map-grid">
+<a class="map-card" href="#modulo-1-1">
+<div class="map-meta">
+<span>1.1</span>
+<span>~35 min</span>
+</div>
+<h3>🎯 A request with a beginning and an end</h3>
+<p>An exit that makes sense.</p>
+</a>
+<a class="map-card" href="#modulo-1-2">
+<div class="map-meta">
+<span>1.2</span>
+<span>~35 min</span>
+</div>
+<h3>🎯 Skills with criteria</h3>
+<p>Less guessing. More evidence.</p>
+</a>
+<a class="map-card" href="#modulo-1-3">
+<div class="map-meta">
+<span>1.3</span>
+<span>~35 min</span>
+</div>
+<h3>🎯 A second opinion that helps</h3>
+<p>Practice and close the step.</p>
+</a>
+</div>
+<h2 class="text-2xl font-bold">Detailed content</h2>
+<article class="module-card" data-inema-module="1-1" data-inema-track="1" id="modulo-1-1">
+<div class="module-card-head">
+<div class="map-meta">
+<span>Module 1.1</span>
+<span>~35 min with practice</span>
+</div>
+<h3 class="text-2xl font-bold">A request with a beginning and an end</h3>
+<p>Turn a broad intention into a delivery you can check.</p>
+<div aria-label="Module 1.1 progress" class="meter" data-inema-meter="modulo:1-1">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-1-resumo-1" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">1</span>
+<span>Choose a single output</span>
+</button>
+<div class="topic-explanation" id="1-1-resumo-1">
+<p>
+<strong>What is</strong>
+<br/>“Organize my work” describes an intention, but it doesn’t say which file should exist by the time you’re done.</p>
+<p>
+<strong>Why learn</strong>
+<br/>A concrete output lets you compare the request with the result. Without that comparison, a well-written response can seem complete even when important information is missing.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Input · Output · Unit · Scope</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-1-resumo-2" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">2</span>
+<span>Fill out the scope sheet</span>
+</button>
+<div class="topic-explanation" id="1-1-resumo-2">
+<p>
+<strong>What is</strong>
+<br/>A short sheet works like a work agreement.</p>
+<p>
+<strong>Why learn</strong>
+<br/>The sheet reduces back-and-forth and helps you identify scope changes. A new function enters a future list instead of silently changing the work in progress.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Goal · Deletion · Acceptance · Pending</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-1-resumo-3" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">3</span>
+<span>Ask for a faithful transformation</span>
+</button>
+<div class="topic-explanation" id="1-1-resumo-3">
+<p>
+<strong>What is</strong>
+<br/>A good request tells which fields must be preserved, which format should be used, and how to handle missing information.</p>
+<p>
+<strong>Why learn</strong>
+<br/>The output quality depends on the clarity of the transformation. Specifying how to handle gaps is usually more useful than adding adjectives like perfect, complete, or professional.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Format · Fidelity · Gap · Separation</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-1-resumo-4" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">4</span>
+<span>Check before expanding</span>
+</button>
+<div class="topic-explanation" id="1-1-resumo-4">
+<p>
+<strong>What is</strong>
+<br/>Do a line-by-line comparison.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Checking turns an impression into evidence. It also shows where to fix: in extraction, in the format, or in the business rule—without rebuilding the whole process.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Counting · Correspondence · Regression · Evidence</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-1-resumo-5" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">5</span>
+<span>Close one step at a time</span>
+</button>
+<div class="topic-explanation" id="1-1-resumo-5">
+<p>
+<strong>What is</strong>
+<br/>A step ends when it delivers what was agreed and passes the checks.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Limiting work in progress reduces the feeling of having many projects almost ready. You start accumulating small deliveries that work and can be combined.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Step · Limit · Blocker · Improvement</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-1-resumo-6" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">6</span>
+<span>Practice: organize three requests</span>
+</button>
+<div class="topic-explanation" id="1-1-resumo-6">
+<p>
+<strong>What is</strong>
+<br/>Create a folder for the exercise and save the input text before using the assistant.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Practice teaches you to close a small task and introduces a central idea of the course: vary the input to discover whether the solution understood the rule or just copied the example.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Common case · Incomplete case · Variation · Conclusion</p>
+</div>
+</div>
+<div class="actions justify-start">
+<a class="button primary" href="modulo-1-1.html">See Full</a>
+<button class="button js-only" onclick="openModal('modulo-1-1.html', 'Module 1.1')">View in Modal</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="1-2" data-inema-track="1" id="modulo-1-2">
+<div class="module-card-head">
+<div class="map-meta">
+<span>Module 1.2</span>
+<span>~35 min with practice</span>
+</div>
+<h3 class="text-2xl font-bold">Skills with criteria</h3>
+<p>Understand what an extension does before you add it to your environment.</p>
+<div aria-label="Module 1.2 progress" class="meter" data-inema-meter="modulo:1-2">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-2-resumo-1" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">1</span>
+<span>Differentiate instruction and tool</span>
+</button>
+<div class="topic-explanation" id="1-2-resumo-1">
+<p>
+<strong>What is</strong>
+<br/>A skill brings together instructions and, sometimes, scripts and auxiliary files to guide a task.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Recognizing the pieces lets you estimate effort and know where a failure happens. You avoid looking for a command that was never installed or giving a skill a capability that depends on another service.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Skill · CLI · MCP · Dependency</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-2-resumo-2" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">2</span>
+<span>Read before running</span>
+</button>
+<div class="topic-explanation" id="1-2-resumo-2">
+<p>
+<strong>What is</strong>
+<br/>Start with the description, the instruction files, and the installer.</p>
+<p>
+<strong>Why learn</strong>
+<br/>A small, traceable inspection is more useful than a generic approval. It links the decision to a specific review and lets you reevaluate only what changed.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Review · Installer · Destination · Record</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-2-resumo-3" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">3</span>
+<span>Turn suspicions into findings</span>
+</button>
+<div class="topic-explanation" id="1-2-resumo-3">
+<p>
+<strong>What is</strong>
+<br/>A useful finding includes location, evidence, impact, and context.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Reports without context create many alarms and little guidance. Triage helps you distinguish necessary behavior from excessive permissions or an operation that requires additional care.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Evidence · Impact · Context · Triage</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-2-resumo-4" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">4</span>
+<span>Review false positives</span>
+</button>
+<div class="topic-explanation" id="1-2-resumo-4">
+<p>
+<strong>What is</strong>
+<br/>Automated tools identify patterns; you need to interpret the result.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Inspection quality isn’t measured by how many alerts you eliminate. It depends on reproducible decisions and visible limitations, even when you can’t conclude.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Confirmed · False positive · Inconclusive · Focused test</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-2-resumo-5" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">5</span>
+<span>Test in a small context</span>
+</button>
+<div class="topic-explanation" id="1-2-resumo-5">
+<p>
+<strong>What is</strong>
+<br/>Install only after you understand what will be changed.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Testing reduces the cost of discovering incompatibilities. You learn how the whole setup behaves before you allow it to participate in larger tasks or use important documents.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Isolation · Fixture · Reversal · Promotion</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-2-resumo-6" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">6</span>
+<span>Practice: write a use decision</span>
+</button>
+<div class="topic-explanation" id="1-2-resumo-6">
+<p>
+<strong>What is</strong>
+<br/>Use the fictional example below as if it were part of a skill.</p>
+<p>
+<strong>Why learn</strong>
+<br/>A well-written decision can be reviewed by someone else. It also shows that inspection isn’t a definitive stamp: new behaviors require new analysis.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Statement · Observation · Condition · Decision</p>
+</div>
+</div>
+<div class="actions justify-start">
+<a class="button primary" href="modulo-1-2.html">See Full</a>
+<button class="button js-only" onclick="openModal('modulo-1-2.html', 'Module 1.2')">View in Modal</button>
+</div>
+</article>
+<article class="module-card" data-inema-module="1-3" data-inema-track="1" id="modulo-1-3">
+<div class="module-card-head">
+<div class="map-meta">
+<span>Module 1.3</span>
+<span>~35 min with practice</span>
+</div>
+<h3 class="text-2xl font-bold">A second opinion that helps</h3>
+<p>Use independent review to find reproducible failures, without trading evidence for opinion.</p>
+<div aria-label="Module 1.3 progress" class="meter" data-inema-meter="modulo:1-3">
+<div class="meter-line">
+<span data-inema-meter-frac="">0 of 0</span>
+<span data-inema-meter-pct="">0%</span>
+</div>
+<div class="meter-track">
+<div class="meter-fill" data-inema-meter-fill="">
+</div>
+</div>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-3-resumo-1" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">1</span>
+<span>Give context to the reviewer</span>
+</button>
+<div class="topic-explanation" id="1-3-resumo-1">
+<p>
+<strong>What is</strong>
+<br/>A review starts with the change you want to evaluate and with the expected behavior.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Context reduces generic comments and prevents the reviewer from proposing changes that contradict the goal. It also limits the cost and scope of the review.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Contract · Diff · Hypothesis · Reproduction</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-3-resumo-2" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">2</span>
+<span>Prepare a comparable baseline</span>
+</button>
+<div class="topic-explanation" id="1-3-resumo-2">
+<p>
+<strong>What is</strong>
+<br/>In a Git project, the diff shows what changed.</p>
+<p>
+<strong>Why learn</strong>
+<br/>A clear baseline prevents the reviewer from comparing the wrong files or treating old code as part of the current change. Checking the status also avoids accidentally publishing preparation data.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Baseline · Status · Scope · Local help</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-3-resumo-3" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">3</span>
+<span>Craft actionable findings</span>
+</button>
+<div class="topic-explanation" id="1-3-resumo-3">
+<p>
+<strong>What is</strong>
+<br/>Ask each finding to include the trigger, effect, location, and how to reproduce it.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Actionable findings make the review a decision-making tool. You can prioritize by impact and verify whether the smallest change actually fixed the issue.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Trigger · Effect · Priority · Minimal fix</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-3-resumo-4" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">4</span>
+<span>Test retry and interruption</span>
+</button>
+<div class="topic-explanation" id="1-3-resumo-4">
+<p>
+<strong>What is</strong>
+<br/>Many errors appear on the second execution.</p>
+<p>
+<strong>Why learn</strong>
+<br/>These scenarios are easy to forget in demos. Testing retry and interruption reveals problems that a quick read or a single run won’t show.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Retry · Idempotence · Atomicity · Interruption</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-3-resumo-5" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">5</span>
+<span>Get out of the retry cycle</span>
+</button>
+<div class="topic-explanation" id="1-3-resumo-5">
+<p>
+<strong>What is</strong>
+<br/>When a fix fails repeatedly, record what you already tried and the result of each attempt.</p>
+<p>
+<strong>Why learn</strong>
+<br/>A minimal case reduces the number of possible explanations. It lets you distinguish a logic problem, an incompatible configuration, and an unavailable dependency.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Minimal case · History · Single hypothesis · Stop</p>
+</div>
+</div>
+<div class="topic-item">
+<button aria-controls="1-3-resumo-6" aria-expanded="false" class="topic-toggle" onclick="toggleTopic(this)" type="button">
+<span class="number">6</span>
+<span>Practice: find a duplication</span>
+</button>
+<div class="topic-explanation" id="1-3-resumo-6">
+<p>
+<strong>What is</strong>
+<br/>Imagine a fictional form that adds requests to a list.</p>
+<p>
+<strong>Why learn</strong>
+<br/>Practice connects review, testing, and business behavior. You learn to verify the real effect of the fix and to recognize when two seemingly identical inputs represent different situations.</p>
+<p>
+<strong>Key concepts</strong>
+<br/>Identifier · Duplication · Conflict · Return test</p>
+</div>
+</div>
+<div class="actions justify-start">
+<a class="button primary" href="modulo-1-3.html">See Full</a>
+<button class="button js-only" onclick="openModal('modulo-1-3.html', 'Module 1.3')">View in Modal</button>
+</div>
+</article>
+<dialog aria-labelledby="preview-title" class="preview" id="module-preview">
+<div class="preview-bar">
+<strong id="preview-title">Preview of the module</strong>
+<button class="button small" onclick="closeModal()">Close preview</button>
+</div>
+<iframe title="Preview of the module">
+</iframe>
+</dialog>
+</main>
+<footer class="footer">
+<div class="wrap">
+<span>Pílulas de Ouro · INEMA · v1.1.0</span>
+<span>
+<a href="../../materiais/index.html">Student materials</a> · <a href="../../index.html">Course start</a>
+</span>
+</div>
+</footer>
+<script src="../../assets/learn.js">
+</script>
+<script src="../../assets/site.js">
+</script>
+<nav aria-label="Course language" data-course-languages=""><a href="../../../curso/trilha1/index.html" hreflang="pt-BR" lang="pt-BR">Português</a><a aria-current="page" href="index.html" hreflang="en" lang="en">English</a><a href="../../../es/curso/trilha1/index.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
+</html>
