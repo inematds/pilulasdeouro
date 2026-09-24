@@ -33,3 +33,11 @@ Abra `http://localhost:8766`. Edite textos no JSON, estrutura no gerador e apres
 GitHub Pages publica a raiz da branch `main` deste repositório. O curso e seus materiais editoriais ficam versionados aqui. Materiais privados de preparação em `down/`, mídias, transcrições e ferramentas de coleta são excluídos pelo `.gitignore` e não fazem parte da publicação.
 
 A licença da fonte Inter acompanha os arquivos em `assets/inter-LICENSE.txt`.
+
+<!-- inema-backlink:v1 -->
+## Mais no INEMA.CLUB
+
+- [Ficha completa deste curso](https://www.inema.club/cursos/275-pilulas-de-ouro-ia-em-projetos-praticos/)
+- [Guia: como aprender inteligência artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)
+<!-- /inema-backlink:v1 -->
